@@ -27,32 +27,32 @@ textarea {
 
 @font-face {
   font-family: "FuturaPT-Light";
-  src: local("FuturaPT-Light"), url("/assets/fonts/FuturaPT-Light.ttf") format("truetype"), url("/alfa-muskus/assets/fonts/UniNeueHeavy.ttf") format("truetype");
+  src: local("FuturaPT-Light"), url("/assets/fonts/FuturaPT-Light.ttf") format("truetype"), url("/alfa-muskus/assets/fonts/FuturaPT-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "FuturaPT-Book";
-  src: local("FuturaPT-Book"), url("/assets/fonts/FuturaPT-Book.ttf") format("truetype"), url("/alfa-muskus/assets/fonts/UniNeueHeavy.ttf") format("truetype");
+  src: local("FuturaPT-Book"), url("/assets/fonts/FuturaPT-Book.ttf") format("truetype"), url("/alfa-muskus/assets/fonts/FuturaPT-Book.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "FuturaPT-Medium";
-  src: local("FuturaPT-Medium"), url("/assets/fonts/FuturaPT-Medium.ttf") format("truetype"), url("/alfa-muskus/assets/fonts/UniNeueRegular.ttf") format("truetype");
+  src: local("FuturaPT-Medium"), url("/assets/fonts/FuturaPT-Medium.ttf") format("truetype"), url("/alfa-muskus/assets/fonts/FuturaPT-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "FuturaPT-Demi";
-  src: local("FuturaPT-Demi"), url("/assets/fonts/FuturaPT-Demi.ttf") format("truetype"), url("/alfa-muskus/assets/fonts/UniNeueHeavy.ttf") format("truetype");
+  src: local("FuturaPT-Demi"), url("/assets/fonts/FuturaPT-Demi.ttf") format("truetype"), url("/alfa-muskus/assets/fonts/FuturaPT-Demi.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "FuturaPT-Bold";
-  src: local("FuturaPT-Bold"), url("/assets/fonts/FuturaPT-Bold.ttf") format("truetype"), url("/alfa-muskus/assets/fonts/UniNeueBold.ttf") format("truetype");
+  src: local("FuturaPT-Bold"), url("/assets/fonts/FuturaPT-Bold.ttf") format("truetype"), url("/alfa-muskus/assets/fonts/FuturaPT-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "FuturaPT-ExtraBold";
-  src: local("FuturaPT-ExtraBold"), url("/assets/fonts/FuturaPT-ExtraBold.ttf") format("truetype"), url("/alfa-muskus/assets/fonts/UniNeueHeavy.ttf") format("truetype");
+  src: local("FuturaPT-ExtraBold"), url("/assets/fonts/FuturaPT-ExtraBold.ttf") format("truetype"), url("/alfa-muskus/assets/fonts/FuturaPT-ExtraBold.ttf") format("truetype");
 }
 
 /**/
