@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 16px;
+  font-family: "FuturaPT-Medium";
+  color: #282728;
+  // overflow-x: hidden;
+}
+a {
+  color: #282728;
+  text-decoration: none;
+}
+input,
+button,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+}
+input[type="checkbox"] {
+}
