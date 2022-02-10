@@ -555,7 +555,7 @@ button {
 
 /* Стили для текстового поля с кнопкой "Далее" */
 .read-more__limiter {
-  max-height: 50px;
+  max-height: 68px;
   overflow: hidden;
   position: relative;
 }
@@ -1642,7 +1642,7 @@ button {
 
 .preparation .preparation__background-text {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1734,6 +1734,18 @@ button {
           transform: translate(-50%, -50%);
 }
 
+.preparation .preparation__group .preparation__item .preparation__wrapper .preparation__image .preparation__image-paper {
+  position: absolute;
+  top: 10%;
+  left: auto;
+  right: 10%;
+  width: 90px;
+  width: 90px;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .preparation .preparation__group .preparation__item .preparation__wrapper .preparation__count {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1787,10 +1799,6 @@ button {
   color: #4aa541;
 }
 
-.preparation .preparation__group .preparation__item .preparation__wrapper .preparation__delivery {
-  margin-top: 50px;
-}
-
 .preparation .preparation__group .preparation__item .preparation__wrapper .preparation__delivery > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1824,7 +1832,7 @@ button {
 }
 
 .preparation .preparation__group .preparation__item .preparation__wrapper .preparation__price {
-  margin-top: 42px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1937,6 +1945,11 @@ button {
           transform: translateY(-50%);
 }
 
+.preparation .divider {
+  height: 10px;
+  margin-top: 25px;
+}
+
 .heals {
   margin-top: 65px;
   padding-top: 30px;
@@ -1960,7 +1973,7 @@ button {
   font-family: "FuturaPT-Book";
 }
 
-.heals .heals__wrapper .heals__images > img {
+.heals .heals__wrapper .heals__images > a > img {
   margin-top: 26px;
 }
 
@@ -2124,7 +2137,7 @@ button {
 
 .reviews {
   position: relative;
-  margin-top: 47px;
+  margin-top: 26px;
   padding-top: 30px;
 }
 
@@ -2369,7 +2382,7 @@ button {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 38px;
+  margin-top: 15px;
 }
 
 .answer .answer__items .answer__item:first-child {
@@ -2445,6 +2458,11 @@ button {
 .answer .answer__items .answer__item .answer__item-right .answer__accordion-number.active {
   background: #48a43f;
   color: white;
+}
+
+.answer .divider {
+  height: 3px;
+  margin-top: 15px;
 }
 
 .answer-footer {

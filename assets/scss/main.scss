@@ -639,7 +639,7 @@
   }
   .preparation__background-text {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -694,6 +694,15 @@
             left: 50%;
             transform: translate(-50%, -50%);
           }
+          .preparation__image-paper {
+            position: absolute;
+            top: 10%;
+            left: auto;
+            right: 10%;
+            width: 90px;
+            width: 90px;
+            transform: translateY(0);
+          }
         }
         .preparation__count {
           display: flex;
@@ -728,7 +737,6 @@
           }
         }
         .preparation__delivery {
-          margin-top: 50px;
           & > div {
             display: flex;
             margin-top: 15px;
@@ -747,7 +755,7 @@
           }
         }
         .preparation__price {
-          margin-top: 42px;
+          margin-top: 10px;
           display: flex;
           justify-content: center;
           div {
@@ -844,6 +852,11 @@
       }
     }
   }
+  .divider {
+    height: 10px;
+    margin-top: 25px;
+
+  }
 }
 .heals {
   margin-top: 65px;
@@ -858,7 +871,7 @@
       font-family: "FuturaPT-Book";
     }
     .heals__images {
-      & > img {
+      & >a> img {
         margin-top: 26px;
       }
       div {
@@ -985,7 +998,7 @@
 }
 .reviews {
   position: relative;
-  margin-top: 47px;
+  margin-top: 26px;
   padding-top: 30px;
   &__background-leaf {
     position: absolute;
@@ -1163,7 +1176,7 @@
     .answer__item {
       display: flex;
       justify-content: space-between;
-      margin-top: 38px;
+      margin-top: 15px;
       &:first-child {
         margin-top: 0;
       }
@@ -1217,6 +1230,10 @@
         }
       }
     }
+  }
+  .divider {
+    height: 3px;
+    margin-top: 15px;
   }
 }
 
