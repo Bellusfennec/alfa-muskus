@@ -1,0 +1,115 @@
+.main {
+  position: relative;
+  margin-top: 2.604vw;
+  height: 40.104vw;
+  .main-background-paper {
+    width: 8.177vw;
+    position: absolute;
+    top: 18.646vw;
+    left: 10.417vw;
+  }
+  h1 {
+    font-family: "FuturaPT-Light";
+    text-align: center;
+    font-size: 3.125vw;
+    letter-spacing: 0.05rem;
+    line-height: 1.175;
+    span {
+      font-family: "FuturaPT-Medium";
+      letter-spacing: 0.22rem;
+    }
+  }
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.563vw;
+    p {
+      text-align: center;
+      font-size: 1.198vw;
+      width: 33.854vw;
+      margin: 0 1.563vw;
+      span {
+        font-family: "FuturaPT-Bold";
+      }
+    }
+  }
+}
+.background-main {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  width: 100vw;
+}
+@media screen and (max-width: 992px) {
+  .main {
+    margin-top: 3.1248rem;
+    height: 48.1248rem;
+    
+    .main-background-paper {
+      display: none;
+    }
+    h1 {
+      font-size: 2rem;
+      letter-spacing: 0.05rem;
+      line-height: 1.175;
+      span {
+        letter-spacing: 0.22rem;
+      }
+    }
+    &__subtitle {
+      margin-top: 1.875rem;
+      p {
+        font-size: 1.1rem;
+        width: 40.6248rem;
+        margin: 0 .9375rem;
+      }
+    }
+  }
+  .background-main {
+    width: 170%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    h1 {
+      font-size: 1.7rem;
+    }
+    &__subtitle {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .background-main {
+    width: 210%;
+  }
+}
+@media screen and (max-width: 625px) {
+  .background-main {
+    width: 250%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .main {
+    h1 {
+      font-size: 1.5rem;
+    }
+    &__subtitle {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .background-main {
+    width: 300%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .background-main {
+    width: 400%;
+  }
+}

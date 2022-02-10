@@ -20,9 +20,9 @@
   opacity: 0;
 }
 .mfp-close {
-  width: 85px;
-  height: 85px;
-  font-size: 35px;
+  width: 4.427vw;
+  height: 4.427vw;
+  font-size: 1.823vw;
 }
 
 // АНИМАЦИИ
@@ -34,7 +34,7 @@
 .highlight-button:after {
   content: "";
   display: block;
-  width: 30px;
+  width: 1.563vw;
   height: 15.625vw;
   margin-left: 2.604vw;
   background: #fff;
@@ -68,7 +68,7 @@
 // анимация появления текста снизу вверх
 .animation__lift {
   opacity: 0;
-  transform: translateY(30%); // 20px
+  transform: translateY(30%); // 1.042vw
 }
 .animation__lift.animation__lift_show {
   opacity: 1;
@@ -93,15 +93,15 @@
 .animation__3-circles {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.417vw;
   &:nth-of-type(2) {
     flex-direction: row-reverse;
   }
   span {
     display: block;
-    width: 10px;
-    height: 10px;
-    border: #48a43f 2px solid;
+    width: 0.521vw;
+    height: 0.521vw;
+    border: #48a43f 0.104vw solid;
     border-radius: 50%;
     animation: opacity 1.5s infinite;
   }
@@ -128,13 +128,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 3.125vw;
+    height: 3.125vw;
   span {
     position: absolute;
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 3.125vw;
+    height: 3.125vw;
     background: #49b8e5;
     border-radius: 50%;
     animation: scale 3s infinite;
@@ -167,7 +167,7 @@
 .link__underline {
   transition: all .4s;
   position: relative;
-  padding-bottom: .16vw;
+  padding-bottom: 0.16vw;
   color: #4aa541;
   &::before {
     content: "";
@@ -175,13 +175,13 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    // height: 1px;
+    // height: 0.052vw;
     // border-color: #4aa541;
-    // border-bottom: 1px dashed #282728;
-    height: 2px;
+    // border-bottom: 0.052vw dashed #282728;
+    height: 0.104vw;
     background-image: linear-gradient(to right, #4aa541 30%, #4aa54100 30%);
     background-position: center;
-    background-size: 7px 2px;
+    background-size: 0.365vw 0.104vw;
     background-repeat: repeat-x;
     transition: all .4s;
   }
@@ -192,17 +192,17 @@
   transform: translateX(-50%);
 }
 .divider {
-  height: 35px;
+  height: 1.823vw;
   background-image: linear-gradient(to right, #e0e0e0 20%, #e8e9ea00 10%);
   background-position: center;
-  background-size: 10px 2px;
+  background-size: 0.521vw 0.104vw;
   background-repeat: repeat-x;
 }
 
 
 /* Стили для текстового поля с кнопкой "Далее" */
 .read-more__limiter {
-  max-height: 68px;
+  max-height: 3.542vw;
   overflow: hidden;
   position: relative;
 }
@@ -216,7 +216,7 @@
     // rgb(255 217 29 / 0%),
     // rgb(255 217 29)90%);
   width: 100%;
-  height: 60px;
+  height: 3.125vw;
   opacity: 1;
   transition: 0.3s;
 }
@@ -234,4 +234,140 @@
 .read-more__button {
   cursor: pointer;
   display: inline-block;
+}
+
+.form__radio_btn {
+  display: inline-block;
+}
+.form__radio_btn input[type="radio"] {
+  display: none;
+}
+.form__radio_btn label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 9.375vw;
+  height: 3.125vw;
+  background: white;
+  border: rgba(105, 164, 98, 0) 0.052vw solid;
+  border-radius: 0.313vw;
+  user-select: none;
+  font-size: 0.938vw;
+  transition: 0.3s;
+  color: #aeaeaf;
+}
+.form__radio_btn input[type="radio"]:checked + label {
+  background: linear-gradient(#61d856, #69a462);
+  color: white;
+  border: none;
+}
+.form__radio_btn label:hover {
+  border: #69a462 0.052vw solid;
+}
+.form {
+  font-family: "FuturaPT-Book";
+  font-size: 0.938vw;
+  input,
+  button {
+    padding: 0 1.042vw;
+    width: 100%;
+    height: 3.125vw;
+    border: 0.052vw solid white;
+    background: white;
+    -webkit-box-shadow: 0vw 0vw 0.521vw 0vw rgba(94, 94, 94, 0.1);
+    -moz-box-shadow: 0vw 0vw 0.521vw 0vw rgba(94, 94, 94, 0.1);
+    box-shadow: 0vw 0vw 0.521vw 0vw rgba(94, 94, 94, 0.1);
+    border-radius: 0.313vw;
+    &:focus {
+      border: #69a462 0.052vw solid;
+      outline: none;
+    }
+    &::placeholder {
+      color: #c0c0c0;
+    }
+  }
+  button {
+    cursor: pointer;
+  }
+  &__decrease-increase {
+    width: 9.375vw;
+    height: 3.125vw;
+    display: flex;
+    font-family: "FuturaPT-Book";
+    font-size: 1.302vw;
+    input {
+      text-align: center;
+      width: 3.125vw;
+      color: #2b2b2b;
+      background: white;
+      -webkit-box-shadow: 0vw 0vw 0.521vw 0vw rgba(94, 94, 94, 0.1);
+      -moz-box-shadow: 0vw 0vw 0.521vw 0vw rgba(94, 94, 94, 0.1);
+      box-shadow: 0vw 0vw 0.521vw 0vw rgba(94, 94, 94, 0.1);
+      font-family: inherit;
+      font-size: inherit;
+      border: none;
+      border-radius: 0;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+    button {
+      cursor: pointer;
+      font-family: inherit;
+      font-size: inherit;
+      border: none;
+      background: white;
+      color: #aeaeaf;
+      width: 3.125vw;
+      height: 3.125vw;
+      font-family: "FuturaPT-Book";
+      font-size: 1.563vw;
+      &:nth-of-type(1) {
+        border-radius: 0.313vw 0 0 0.313vw;
+      }
+      &:nth-of-type(2) {
+        border-radius: 0 0.313vw 0.313vw 0;
+      }
+    }
+  }
+  // .form__telephone-button
+  &__telephone-button {
+    display: flex;
+    div:nth-of-type(1) {
+      input {
+        height: 4.167vw;
+        width: 14.063vw;
+      }
+    }
+    div:nth-of-type(2) {
+      button {
+        margin-left: 0.521vw;
+        color: white;
+        text-transform: uppercase;
+        width: 14.583vw;
+        border-radius: 0.521vw;
+        border: none;
+        height: 4.167vw;
+        font-size: 0.833vw;
+        letter-spacing: 0.09rem;
+        font-family: "FuturaPT-Demi";
+        background: linear-gradient(#11b6d1, #358fba);
+      }
+    }
+  }
+  &__checkbox {
+    div {
+      input {
+        width: 0.781vw;
+        height: 0.781vw;
+      }
+    }
+  }
+}
+
+.iti__flag {
+  width: 1.042vw;
 }

@@ -1,0 +1,145 @@
+.reviews {
+  position: relative;
+  margin-top: 1.354vw;
+  padding-top: 1.563vw;
+  &__background-leaf {
+    position: absolute;
+    width: 20.833vw;
+    top: -20.833vw;
+    left: 0;
+    z-index: -1;
+  }
+  &__owl {
+    margin-top: 2.813vw;
+  }
+  .owl-nav {
+    button {
+      span {
+        background: white;
+        border: #eae8e8 0.052vw solid;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        // width: 3.125vw;
+        // height: 3.125vw;
+        padding: 0vw 1.563vw 0.521vw 1.563vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.865vw;
+        line-height: 1.1;
+        font-family: "FuturaPT-Light";
+        &:hover {
+          color: white;
+          background: linear-gradient(#11b6d1, #338db8);
+        }
+      }
+    }
+    .owl-prev {
+      span {
+        left: -2.083vw;
+      }
+    }
+    .owl-next {
+      span {
+        right: -0.521vw;
+      }
+    }
+  }
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.823vw;
+    .owl-dot {
+      margin-left: 1.146vw;
+      border-radius: 50%;
+      height: 0.521vw;
+      width: 0.521vw;
+      background: #f0f0f0;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:hover {
+        background: #338db8;
+      }
+      &.active {
+        background: #338db8;
+      }
+    }
+  }
+  &__buttons {
+    margin-top: 2.604vw;
+    display: flex;
+    justify-content: center;
+    a {
+      margin-left: 1.042vw;
+      display: inline-block;
+      padding: 1.198vw 2.344vw;
+      color: white;
+      border-radius: 0.521vw;
+      border: none;
+      font-size: 0.885vw;
+      letter-spacing: 0.03rem;
+      font-family: "FuturaPT-Medium";
+      background: linear-gradient(#11b6d1, #338db8);
+      &:first-child {
+        margin-left: 0;
+      }
+      &.disabled {
+        font-family: "FuturaPT-Book";
+        background: #f4f5f6;
+        color: #b4b4b4;
+      }
+    }
+  }
+  &__item {
+    width: 18.75vw;
+    border-radius: 1.823vw;
+    padding: 2.083vw 2.865vw 2.865vw 2.865vw;
+    background: #f4f5f6;
+  }
+  &__user {
+    display: flex;
+    & > img {
+      width: 5.208vw !important; 
+    }
+    & > div {
+      margin-left: 1.719vw;
+      margin-top: 0.156vw;
+      h5 {
+        font-size: 1.563vw;
+        letter-spacing: 0.08rem;
+      }
+      div {
+        margin-top: 0.365vw;
+        display: inline-block;
+        padding: 0.417vw 1.042vw;
+        color: #48a43f;
+        background: white;
+        border-radius: 1.563vw;
+      }
+    }
+  }
+  &__problem {
+    margin-top: 0.885vw;
+    h6 {
+      margin-top: 0.26vw;
+      font-size: 1.042vw;
+      letter-spacing: 0.05rem;
+      & > img {
+        display: inline-block !important;
+        width: 0.729vw !important;
+      }
+    }
+    .reviews__text {
+      margin-top: 1.094vw;
+      font-size: 0.833vw;
+      font-family: "FuturaPT-Book";
+      line-height: 1.2;
+    }
+    .reviews__grade {
+      margin-top: 1.25vw;
+    }
+  }
+}

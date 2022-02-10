@@ -1,0 +1,60 @@
+.answer-footer {
+  position: relative;
+  top: -3.958vw;
+  &__wrapper {
+    border: #ededed 0.052vw solid;
+    border-radius: 1.042vw;
+    height: 9.896vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -0.521vw;
+      right: -0.521vw;
+      left: -0.521vw;
+      bottom: -0.521vw;
+      background: #fff;
+      border-radius: 1.042vw;
+      -webkit-box-shadow: 0vw 0vw 0.156vw 0vw rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0vw 0vw 0.156vw 0vw rgba(0, 0, 0, 0.1);
+      box-shadow: 0vw 0vw 0.156vw 0vw rgba(0, 0, 0, 0.1);
+      z-index: -1;
+    }
+  }
+  &__text {
+    width: 10.417vw;
+    color: #48a43f;
+    font-size: 1.563vw;
+    text-transform: uppercase;
+    font-family: "FuturaPT-Demi";
+  }
+  &__doctor {
+    width: 16.927vw;
+    margin-top: -0.781vw;
+    div:nth-child(1) {
+      font-size: 1.302vw;
+      // width: 14.063vw;
+      line-height: 1.2;
+      font-family: "FuturaPT-Book";
+    }
+    div:nth-child(2) {
+      font-family: "FuturaPT-Demi";
+      font-size: 2.344vw;
+      line-height: 1.2;
+    }
+  }
+  &__button a {
+    display: inline-block;
+    padding: 1.823vw 3.125vw;
+    color: white;
+    border-radius: 0.521vw;
+    border: none;
+    font-size: 0.885vw;
+    letter-spacing: 0.03rem;
+    font-family: "FuturaPT-Bold";
+    text-transform: uppercase;
+    background: linear-gradient(#11b6d1, #338db8);
+  }
+}

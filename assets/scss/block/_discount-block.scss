@@ -1,0 +1,134 @@
+.discount {
+  position: relative;
+  &__wrapper {
+    border: #ededed 0.052vw solid;
+    border-radius: 1.042vw;
+    height: 17.188vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -0.521vw;
+      right: -0.521vw;
+      left: -0.521vw;
+      bottom: -0.521vw;
+      background: #fff;
+      border-radius: 1.042vw;
+      -webkit-box-shadow: 0vw 0vw 0.156vw 0vw rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0vw 0vw 0.156vw 0vw rgba(0, 0, 0, 0.1);
+      box-shadow: 0vw 0vw 0.156vw 0vw rgba(0, 0, 0, 0.1);
+      z-index: -1;
+    }
+  }
+  &__image {
+    position: relative;
+    align-self: flex-start;
+    width: 19.792vw;
+    height: 17.188vw;
+    
+    img:nth-of-type(1) {
+      width: 25.938vw;
+      left: -6.25vw;
+      position: absolute;
+    }
+    img:nth-of-type(2) {
+      width: 12.448vw;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+    }
+  }
+  &__text {
+    width: 15.208vw;
+    z-index: 1;
+    // margin-top: 4.375vw;
+    p:nth-child(1) {
+      font-size: 2.292vw;
+      line-height: 1.175;
+      letter-spacing: -0.05rem;
+      span {
+        font-family: "FuturaPT-Bold";
+      }
+    }
+    p:nth-child(2) {
+      margin-top: 0.781vw;
+      font-size: 1.146vw;
+      letter-spacing: 0.04rem;
+    }
+  }
+  &__form {
+    z-index: 1;
+    width: 17.188vw;
+    margin-right: 3.646vw;
+    .discount__tel {
+      width: 17.188vw;
+      padding: 1.563vw 2.083vw;
+      font-size: 0.885vw;
+      border-radius: 0.521vw;
+      border: none;
+      background: #f7f6f6;
+      letter-spacing: 0.05rem;
+      font-family: "FuturaPT-Book";
+      &:hover,
+      &:focus {
+        outline: #11b6d1 0.052vw solid;
+      }
+    }
+    button {
+      margin-top: 0.938vw;
+      width: 100%;
+      color: white;
+      text-transform: uppercase;
+      padding: 1.823vw 1.563vw;
+      border-radius: 0.521vw;
+      border: none;
+      font-size: 0.885vw;
+      letter-spacing: 0.09rem;
+      font-family: "FuturaPT-Demi";
+      background: linear-gradient(#11b6d1, #358fba);
+    }
+    div {
+      // margin-top: 0.781vw;
+      input {
+        display: inline-block;
+        width: 2.604vw;
+      }
+      p {
+        font-size: 0.521vw;
+        width: 13.021vw;
+        display: inline-block;
+        a {
+          font-family: "FuturaPT-Bold";
+          text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  &__count {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -4.896vw;
+    background: linear-gradient(#61d856, #5cb653);
+    padding: 0.521vw 1.406vw;
+    border-radius: 0 0 1.302vw 1.302vw;
+    color: white;
+    div {
+      font-size: 2.865vw;
+      font-family: "FuturaPT-Bold";
+      margin-right: 0.521vw;
+      line-height: 1.125;
+    }
+    p {
+      font-size: 0.938vw;
+    }
+  }
+}

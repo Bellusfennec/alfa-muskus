@@ -1,0 +1,30 @@
+.footer {
+  margin-top: 2.865vw;
+  background: #49a340;
+  color: white;
+  // .footer_wrapper
+  &_wrapper {
+    height: 5.208vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.729vw;
+  }
+  // .footer__name
+  &__name {
+  }
+  // .footer__copyright
+  &__copyright {
+    text-align: center;
+  }
+  // .footer__paradigma
+  &__paradigma {
+  }
+  a {
+    color: white;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

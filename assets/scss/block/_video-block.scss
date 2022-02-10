@@ -1,0 +1,34 @@
+.video {
+  margin-top: 4.948vw;
+  position: relative;
+  padding-top: 1.563vw;
+  .video__youtube {
+    margin-top: 2.292vw;
+    position: relative;
+    &>img {
+      width: 60.938vw;
+    }
+    .video__play-button {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2.083vw;
+      div {
+        display: flex;
+        justify-content: end;
+        width: 1.563vw;
+        & > img {
+          width: 1.302vw;
+        }
+      }
+    }
+  }
+  .video__hand {
+    width: 23.75vw;
+    position: absolute;
+    right: -0.521vw;
+    top: 3.906vw;
+  }
+}

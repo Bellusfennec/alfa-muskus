@@ -92,7 +92,9 @@
       
     </header>
 
+    <input type="checkbox" id="nav-toggle" hidden>
     <nav class="nav">
+      <label for="nav-toggle" class="nav-toggle" onclick></label>
       <a href="#Review-Doctor">Отзыв доктора</a>
       <a href="#Indications">Показания</a>
       <a href="#Difference">Отличие</a>
@@ -132,36 +134,40 @@
     </main>
 
     <section class="discount">
-      <img src="assets/images/Business card.png" alt="" />
-      <div class="descount_image">
-        <img src="" alt="" />
-      </div>
-      <div class="discount__text">
-        <p><span>Дарим скидку -15%</span> на ваш первый заказ</p>
-        <p>
-          чтобы вы могли убедиться<br />
-          в эффективности препарата
-        </p>
-      </div>
-      <form action="" class="discount__form">
-        <input
-          class="discount__tel phone"
-          type="tel"
-          placeholder="Ваш номер телефона"
-          name="phone"
-        />
-        <button class="highlight-button">Забронировать скидку</button>
-        <div>
-          <input type="checkbox" name="" id="" checked="" />
-          <p>
-            Нажимая на кнопку, я даю согласие на обработку персональных данных
-            <a class="privacy-policy-popup" href="#Privacy-policy"
-              >политика конфиденциальности</a
-            >
-          </p>
+      <div class="container">
+        <div class="discount__wrapper">
+          <div class="discount__image">
+            <img src="assets/images/descount-image-cards.png" alt="" />
+            <img src="assets/images/descount-image-plant.png" alt="" />
+          </div>
+          <div class="discount__text">
+            <p><span>Дарим скидку -15%</span> на ваш первый заказ</p>
+            <p>
+              чтобы вы могли убедиться<br />
+              в эффективности препарата
+            </p>
+          </div>
+          <form action="" class="discount__form">
+            <input
+              class="discount__tel phone"
+              type="tel"
+              placeholder="Ваш номер телефона"
+              name="phone"
+            />
+            <button class="highlight-button">Забронировать скидку</button>
+            <div>
+              <input type="checkbox" name="" id="" checked="" />
+              <p>
+                Нажимая на кнопку, я даю согласие на обработку персональных данных
+                <a class="privacy-policy-popup" href="#Privacy-policy"
+                  >политика конфиденциальности</a
+                >
+              </p>
+            </div>
+          </form>
         </div>
-      </form>
-      <div class="discount-count">
+      </div>
+      <div class="discount__count">
         <div>9</div>
         <p>
           препаратов осталось<br />

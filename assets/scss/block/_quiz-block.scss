@@ -1,0 +1,18 @@
+.quiz {
+  margin-top: 3.75vw;
+  margin-bottom: 41.146vw;
+  position: relative;
+  &__background {
+    width: 100vw;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+  }
+  &__book {
+    width: 14.323vw;
+    position: absolute;
+    z-index: -1;
+    top: -5.208vw;
+    right: 0;
+  }
+}

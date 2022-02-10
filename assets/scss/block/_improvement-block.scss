@@ -1,0 +1,63 @@
+.improvement {
+  position: relative;
+  margin-top: 1.198vw;
+  padding-top: 1.563vw;
+  .improvement__group {
+    margin-top: 1.823vw;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding-top: 4.427vw;
+    .improvement__background {
+      width: 60.938vw;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+    }
+    div {
+      &:first-child {
+        .improvement__item {
+          .improvement__text {
+          }
+        }
+      }
+      .improvement__item {
+        display: flex;
+        align-items: center;
+        width: 16.146vw;
+        margin-top: 3.125vw;
+        &:nth-child(1) {
+          margin-top: 0vw;
+        }
+        .improvement__icon {
+          position: relative;
+          background: #2fa55c;
+          width: 1.823vw;
+          height: 1.823vw;
+          border-radius: 50%;
+          img {
+            width: 0.625vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        .improvement__text {
+          margin-left: 1.042vw;
+          margin-right: 0.521vw;
+          h3 {
+            font-size: 1.25vw;
+            margin-bottom: 0.26vw;
+            letter-spacing: 0.09rem;
+            line-height: 1.05;
+          }
+          p {
+            font-size: 0.938vw;
+            font-family: "FuturaPT-Book";
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+.heals {
+  margin-top: 3.385vw;
+  padding-top: 1.563vw;
+  .heals__wrapper {
+    margin-top: 2.76vw;
+    display: flex;
+    justify-content: space-between;
+    h4 {
+      font-size: 1.198vw;
+      letter-spacing: 0.087rem;
+      font-family: "FuturaPT-Book";
+    }
+    .heals__images {
+      & >a> img {
+        margin-top: 1.354vw;
+        width: 26.042vw;
+      }
+      div {
+        margin-top: 0.833vw;
+        display: flex;
+        justify-content: space-between;
+        img {
+          width: 7.969vw;
+        }
+      }
+    }
+    .heals__certificates-reviews {
+      width: 30.469vw;
+      .heals__certificates {
+        display: flex;
+        justify-content: space-between;
+        & > div {
+          div {
+            margin-top: 0.781vw;
+            img {
+              width: 7.604vw;
+            }
+          }
+        }
+        & > div:nth-child(1) {
+          width: 10.417vw;
+        }
+        & > div:nth-child(2) {
+          width: 15.885vw;
+          h4 {
+            width: 7.813vw;
+          }
+        }
+      }
+      .heals__reviews-doctors {
+        margin-top: 0.521vw;
+        .heals__reviews-doctors-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          p {
+            font-size: 0.938vw;
+            margin-right: 1.042vw;
+          }
+        }
+        .heals__doctor-wrapper {
+          margin-top: 1.042vw;
+          background: #f4f5f6;
+          border-radius: 1.563vw;
+          padding: 1.563vw 2.083vw;
+          .heals__doctor {
+            display: flex;
+            div:nth-child(1) {
+              position: relative;
+              img {
+                width: 5.208vw;
+              }
+              .heals__quotes {
+                width: 1.354vw;
+                position: absolute;
+                right: 0;
+                bottom: 0.521vw;
+              }
+            }
+            div:nth-child(2) {
+              margin-top: 0.365vw;
+              margin-left: 1.563vw;
+              h5 {
+                font-size: 0.938vw;
+                letter-spacing: 0.035rem;
+                color: #282728;
+              }
+              h6 {
+                margin-top: 0.26vw;
+                font-size: 0.677vw;
+                letter-spacing: 0.065rem;
+                font-family: "FuturaPT-Light";
+                width: 18.229vw;
+                color: #9d9e9e;
+              }
+            }
+          }
+          .heals__doctor-comment {
+            margin-top: 0.208vw;
+            p {
+              font-size: 0.729vw;
+              line-height: 1.2;
+            }
+            a {
+              display: inline-block;
+              margin-top: 0.417vw;
+              color: #48a43f;
+              font-family: "FuturaPT-Demi";
+              font-size: 0.729vw;
+              letter-spacing: 0.02rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__owl {
+    .owl-item img {
+      display: inline-block;
+      width: auto;
+    }
+  }
+  .owl-nav {
+    button {
+      span {
+        position: absolute;
+        top: -2.604vw;
+        border-radius: 50%;
+        padding: 0vw 0.781vw 0vw 0.781vw;
+        font-size: 2.865vw;
+        line-height: 1.1;
+        font-family: "FuturaPT-Light";
+        &:hover {
+          color: #338db8;
+        }
+      }
+    }
+    .owl-prev {
+      span {
+        right: 2.604vw;
+      }
+    }
+    .owl-next {
+      span {
+        right: -0.781vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,160 @@
+.benefits {
+  position: relative;
+  margin-top: 1.302vw;
+  h2 {
+    padding-top: 1.563vw;
+  }
+  .benefits__items {
+    margin-top: 3.229vw;
+    display: flex;
+    justify-content: space-around;
+    .benefits__group {
+      &:nth-of-type(1) {
+        margin-right: 6.25vw;
+        width: 26.563vw;
+      }
+      &:nth-of-type(2) {
+        width: 27.083vw;
+        margin-right: 1.042vw;
+        margin-left: 1.042vw;
+        .benefits__title {
+          p {
+            background: none;
+            color: #adadae;
+            font-family: "FuturaPT-Book";
+          }
+        }
+        .benefits__wrapper {
+          border: #ededed00 0.052vw solid;
+          background: #f4f5f6;
+          &::after {
+            background: #f4f5f6;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            border-radius: 1.563vw;
+          }
+          & > div:nth-child(3) {
+            margin-top: 0.938vw;
+          }
+        }
+      }
+      .benefits__title {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.521vw;
+        p {
+          background: linear-gradient(#61d856, #5cb653);
+          padding: 1.042vw 2.604vw;
+          border-radius: 1.302vw 1.302vw 0 0;
+          color: white;
+          font-size: 1.823vw;
+          line-height: 1.125;
+        }
+        img {
+          width: 4.896vw;
+          position: absolute;
+          right: 2.604vw;
+          top: -2.083vw;
+        }
+      }
+      .benefits__wrapper {
+        position: relative;
+        padding: 0 2.604vw 2.604vw 2.865vw;
+        border: #ededed 0.052vw solid;
+        border-radius: 1.042vw;
+        background: #f4f5f6;
+        &::after {
+          content: "";
+          position: absolute;
+          top: -0.521vw;
+          right: -0.521vw;
+          left: -0.521vw;
+          bottom: -0.521vw;
+          background: #fff;
+          border-radius: 1.042vw;
+          -webkit-box-shadow: 0vw 0vw 0.156vw 0vw rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0vw 0vw 0.156vw 0vw rgba(0, 0, 0, 0.1);
+          box-shadow: 0vw 0vw 0.156vw 0vw rgba(0, 0, 0, 0.1);
+          z-index: -1;
+        }
+        & > div {
+          display: flex;
+          align-items: center;
+          margin-top: 2.083vw;
+          &:first-child {
+            margin-top: 3.021vw;
+          }
+          & > div {
+            img {
+              width: 0.156vw;
+            }
+            .benefits__icon {
+              position: relative;
+              background: #2fa55c;
+              width: 1.823vw;
+              height: 1.823vw;
+              border-radius: 50%;
+              img {
+                width: 0.625vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+              &.benefits__icon-red {
+                background: #df0c25;
+              }
+            }
+          }
+          .benefits__text {
+            margin-left: 1.302vw;
+            margin-right: 0.521vw;
+            h3 {
+              font-size: 1.25vw;
+              margin-bottom: 0.26vw;
+              letter-spacing: 0.09rem;
+              line-height: 1.05;
+            }
+            p {
+              font-family: "FuturaPT-Book";
+            }
+          }
+        }
+      }
+      .benefits__button {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -1.563vw;
+        a {
+          display: inline-block;
+          padding: 1.823vw 6.25vw;
+          text-transform: uppercase;
+          color: white;
+          border-radius: 0.521vw;
+          border: none;
+          font-size: 0.833vw;
+          letter-spacing: 0.05rem;
+          font-family: "FuturaPT-Bold";
+          background: linear-gradient(#11b6d1, #338db8);
+        }
+      }
+    }
+  }
+  .benefits__background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+  }
+  .benefits__background-leaf {
+    width: 15.26vw;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+  }
+}

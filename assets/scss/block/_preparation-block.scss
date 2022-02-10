@@ -1,0 +1,268 @@
+.preparation {
+  margin-top: 8.021vw;
+  position: relative;
+  padding-top: 1.563vw;
+  h2 {
+    letter-spacing: 0.01rem;
+    font-size: 2.552vw;
+  }
+  .preparation__subtitle {
+    font-size: 1.823vw;
+    text-align: center;
+    margin-top: 2.083vw;
+    letter-spacing: 0.02rem;
+  }
+  .preparation__background-leaf {
+    width: 22.083vw;
+    position: absolute;
+    top: -13.021vw;
+    right: 0;
+    z-index: -2;
+  }
+  .preparation__background {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: -3;
+  }
+  .preparation__background-text {
+    width: 91.927vw;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  .preparation__group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.448vw;
+    .preparation__item {
+      .preparation__title {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        p {
+          padding: 0.521vw 2.344vw;
+          border-radius: 1.302vw 1.302vw 0 0;
+          color: white;
+          font-size: 1.406vw;
+          line-height: 1.125;
+        }
+      }
+      .preparation__wrapper {
+        width: 18.75vw;
+        background: #fff;
+        padding: 1.042vw 0.781vw 2.865vw 0.781vw;
+        border-radius: 1.563vw;
+        -webkit-box-shadow: 0vw 0vw 0.156vw 0vw rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0vw 0vw 0.156vw 0vw rgba(0, 0, 0, 0.1);
+        box-shadow: 0vw 0vw 0.156vw 0vw rgba(0, 0, 0, 0.1);
+        .preparation__tagline {
+          margin-top: 0.469vw;
+          display: flex;
+          justify-content: center;
+          p {
+            width: 11.458vw;
+            font-size: 1.042vw;
+            text-align: center;
+            font-family: "FuturaPT-Book";
+            span {
+              font-family: "FuturaPT-Bold";
+            }
+          }
+        }
+        .preparation__image {
+          height: 15.885vw;
+          position: relative;
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          .preparation__image-paper {
+            position: absolute;
+            top: 10%;
+            left: auto;
+            right: 10%;
+            width: 4.688vw;
+            width: 4.688vw;
+            transform: translateY(0);
+          }
+        }
+        .preparation__count {
+          display: flex;
+          justify-content: space-around;
+          p {
+            font-size: 0.938vw;
+            span {
+              font-family: "FuturaPT-Bold";
+            }
+          }
+          .preparation__availability {
+            display: flex;
+            align-items: center;
+            .preparation__availability-icon {
+              position: relative;
+              width: 0.781vw;
+              height: 0.781vw;
+              background: #4aa541;
+              border-radius: 50%;
+              img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 0.365vw;
+              }
+            }
+            .preparation__availability-text {
+              margin-left: 0.26vw;
+              color: #4aa541;
+            }
+          }
+        }
+        .preparation__delivery {
+          & > div {
+            display: flex;
+            margin-top: 0.781vw;
+            justify-content: center;
+            & > div {
+              display: flex;
+              align-items: center;
+              p {
+                width: 9.375vw;
+                margin-left: 0.781vw;
+                span {
+                  font-family: "FuturaPT-Bold";
+                }
+              }
+            }
+            &:nth-of-type(1) {
+              img {
+                width: 1.667vw;
+              }
+            }
+            &:nth-of-type(2) {
+              img {
+                width: 1.406vw;
+              }
+            }
+          }
+        }
+        .preparation__price {
+          margin-top: 0.521vw;
+          display: flex;
+          justify-content: center;
+          div {
+            display: flex;
+            p {
+              &:nth-child(1) {
+                color: #48a43f;
+                font-family: "FuturaPT-Bold";
+                font-size: 0.938vw;
+                span {
+                  font-size: 2.448vw;
+                  margin-right: 0.26vw;
+                }
+              }
+              &:nth-child(2) {
+                margin-left: 1.458vw;
+                color: #d6d6d6;
+                font-size: 0.938vw;
+                font-family: "FuturaPT-Book";
+                span {
+                  text-decoration: line-through;
+                  font-size: 2.448vw;
+                  margin-right: 0.26vw;
+                }
+              }
+            }
+          }
+        }
+      }
+      .preparation__footer {
+        div {
+          display: flex;
+          justify-content: center;
+        }
+        div:nth-child(1) {
+          position: relative;
+          top: -1.823vw;
+          a {
+            display: inline-block;
+            padding: 1.406vw 2.344vw;
+            text-transform: uppercase;
+            color: white;
+            border-radius: 0.521vw;
+            border: none;
+            font-size: 0.781vw;
+            letter-spacing: 0.05rem;
+            font-family: "FuturaPT-Bold";
+            background: linear-gradient(#11b6d1, #338db8);
+          }
+        }
+        div:nth-child(2) {
+          position: relative;
+          top: -0.26vw;
+          a {
+            color: #48a43f;
+            font-family: "FuturaPT-Demi";
+            font-size: 0.885vw;
+            letter-spacing: 0.05rem;
+          }
+        }
+      }
+      &:nth-child(1) {
+        .preparation__title {
+          p {
+            background: #0fadcb;
+          }
+        }
+        .preparation__image {
+          img {
+            width: 16.094vw;
+            left: 0;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      &:nth-child(2) {
+        .preparation__title {
+          p {
+            background: #76483d;
+          }
+        }
+        .preparation__image {
+          img {
+            width: 13.49vw;
+            left: 0;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      &:nth-child(3) {
+        .preparation__title {
+          p {
+            background: #4aa541;
+          }
+        }
+        .preparation__image {
+          img {
+            width: 13.906vw;
+            left: 0;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+  .divider {
+    height: 0.521vw;
+    margin-top: 1.302vw;
+
+  }
+}

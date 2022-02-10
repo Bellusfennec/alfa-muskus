@@ -1,0 +1,25 @@
+.map {
+  margin-top: 1.823vw;
+  // .map__wrapper
+  &__wrapper {
+    position: relative;
+  }
+  // .map__adress
+  &__adress {
+    position: absolute;
+    top: 2.656vw;
+    left: 5.365vw;
+    h3 {
+      font-size: 1.458vw;
+      letter-spacing: 0.13rem;
+    }
+  }
+  &__group {
+    margin-top: 1.302vw;
+    display: flex;
+    img {
+      width: 11.979vw;
+      margin-right: 0.781vw;
+    }
+  }
+}
