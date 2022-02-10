@@ -1,5 +1,5 @@
-/**/
-
+// ПОПАП ОКНО
+// анимации появления
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
@@ -19,29 +19,22 @@
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
 }
-
-/**/
-
-#map-popup {
-  position: relative;
-  background: #FFF;
-  padding: 1.042vw;
-  width:auto;
-  max-width: 43.75vw;
-  margin: 1.042vw auto;
+.mfp-close {
+  width: 85px;
+  height: 85px;
+  font-size: 35px;
 }
 
-/**/
-.flare-button {
-  /* Важные стили для анимации */
+// АНИМАЦИИ
+// блик
+.highlight-button {
   position: relative;
   overflow: hidden;
 }
-
-.flare-button:after {
+.highlight-button:after {
   content: "";
   display: block;
-  width: 2.083vw;
+  width: 30px;
   height: 15.625vw;
   margin-left: 2.604vw;
   background: #fff;
@@ -51,14 +44,13 @@
       rgba(255, 255, 255, 1) 50%,
       rgba(255, 255, 255, 0.5) 100%
   );
+  position: absolute;
   left: -2.083vw;
   top: -5.208vw;
   z-index: 1;
   transform: rotate(45deg);
-  position: absolute;
   animation: movingFlare 2.5s ease-in-out 0.05s infinite;
 }
- 
 @keyframes movingFlare {
   0% {
     left: -1.563vw;
@@ -72,4 +64,174 @@
     left: 110%;
     margin-left: 4.167vw;
   }
+}
+// анимация появления текста снизу вверх
+.animation__lift {
+  opacity: 0;
+  transform: translateY(30%); // 20px
+}
+.animation__lift.animation__lift_show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+// анимация исчезновения и появления Х
+.animation__opacity {
+  animation: opacity 2s infinite;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animation__3-circles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  &:nth-of-type(2) {
+    flex-direction: row-reverse;
+  }
+  span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: #48a43f 2px solid;
+    border-radius: 50%;
+    animation: opacity 1.5s infinite;
+  }
+  span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+}
+
+// @for $i from 1 through 5 {
+//   .circle-#{$i} {
+//     background-color: nth($color, $i);
+//     &:before {
+//       background-color: nth($color, $i);
+//       animation-delay: 200ms * $i;
+//     }
+//   }
+// }
+.animation__2-scale {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+  span {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #49b8e5;
+    border-radius: 50%;
+    animation: scale 3s infinite;
+  }
+  span:nth-child(1) {
+    animation: none;
+  }
+  span:nth-child(2) {
+    animation-delay: 0s;
+  }
+  span:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50%, 75% {
+    transform: scale(2);
+  }
+  78%, 100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+.link__underline {
+  transition: all .4s;
+  position: relative;
+  padding-bottom: .16vw;
+  color: #4aa541;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    // height: 1px;
+    // border-color: #4aa541;
+    // border-bottom: 1px dashed #282728;
+    height: 2px;
+    background-image: linear-gradient(to right, #4aa541 30%, #4aa54100 30%);
+    background-position: center;
+    background-size: 7px 2px;
+    background-repeat: repeat-x;
+    transition: all .4s;
+  }
+}
+.link__underline:hover:before {
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.divider {
+  height: 35px;
+  background-image: linear-gradient(to right, #e0e0e0 20%, #e8e9ea00 10%);
+  background-position: center;
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+}
+
+
+/* Стили для текстового поля с кнопкой "Далее" */
+.read-more__limiter {
+  max-height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.read-more__limiter .read-more__bottom {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 217, 29, 0),
+    rgba(255, 217, 29, 0.90)90%);
+    // rgb(255 217 29 / 0%),
+    // rgb(255 217 29)90%);
+  width: 100%;
+  height: 60px;
+  opacity: 1;
+  transition: 0.3s;
+}
+.read-more__checker {
+  opacity: 0;
+  position: absolute;
+}
+.read-more__checker:checked ~ .read-more__limiter {
+  max-height: none;
+}
+.read-more__checker:checked ~ .read-more__limiter .read-more__bottom {
+  opacity: 0;
+  transition: 0.3s;
+}
+.read-more__button {
+  cursor: pointer;
+  display: inline-block;
 }

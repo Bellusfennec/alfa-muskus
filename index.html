@@ -9,6 +9,18 @@
       href="assets/images/favicon.png"
       type="image/png"
     />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/intl-tel-input-master/build/css/intlTelInput.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/Magnific-Popup-master/dist/magnific-popup.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
     <title>Document</title>
   </head>
@@ -36,7 +48,7 @@
           <p><span>Доставка по</span> всей Украине</p>
         </div>
         <div class="header__button">
-          <a href="">КУПИТЬ СО СКИДКОЙ</a>
+          <a class="highlight-button" href="#To-order">КУПИТЬ СО СКИДКОЙ</a>
         </div>
         <div class="header__messanger">
           <p>
@@ -44,24 +56,32 @@
             мы онлайн
           </p>
           <div>
-            <div>
+            <a href="#" target="_blank">
               <img src="assets/images/вайбер.png" alt="" />
-            </div>
-            <div>
+            </a>
+            <a href="#" target="_blank">
               <img src="assets/images/телеграм .png" alt="" />
-            </div>
-            <div>
+            </a>
+            <a href="#" target="_blank">
               <img src="assets/images/ватсап.png" alt="" />
-            </div>
+            </a>
           </div>
         </div>
         <div class="header__contact">
           <div>
-            <img src="assets/images/Круг.png" alt="" />
+            <img
+              class="animation__opacity"
+              src="assets/images/Круг.png"
+              alt=""
+            />
             <p>Звоните: Пн-Вс с 9:00 до 18:00</p>
           </div>
-          <p>+38(067) 854-90-60</p>
-          <a href="#">Заказать консультацию</a>
+          <a class="header__telephone" href="">+38(067) 854-90-60</a>
+          <a
+            class="order-consultation-popup link__underline"
+            href="#Order-consultation"
+            >Заказать консультацию</a
+          >
         </div>
       </div>
       <img
@@ -69,36 +89,44 @@
         src="assets/images/Прямоугольник 2.png"
         alt=""
       />
-      <!-- <img class="background-main-paper" src="assets/images/paper.png" alt="" />
-      <img class="background-main-paper" src="assets/images/paper_shadow.png" alt="" /> -->
+      
     </header>
 
     <nav class="nav">
-      <a href="#">Отзыв доктора</a>
-      <a href="#">Показания</a>
-      <a href="#">Отличие</a>
-      <a href="#">Влияние на организм</a>
-      <a href="#">Заказать</a>
-      <a href="#">Отзывы</a>
-      <a href="#">Сертификаты</a>
-      <a href="#">Вопросы и ответы</a>
-      <a href="#">Как заказать</a>
-      <a href="#">Контакты</a>
+      <a href="#Review-Doctor">Отзыв доктора</a>
+      <a href="#Indications">Показания</a>
+      <a href="#Difference">Отличие</a>
+      <a href="#Impact-on-the-body">Влияние на организм</a>
+      <a href="#To-order">Заказать</a>
+      <a href="#Reviews">Отзывы</a>
+      <a href="#Certificates">Сертификаты</a>
+      <a href="#Questions-and-answers">Вопросы и ответы</a>
+      <a href="#How-to-order">Как заказать</a>
+      <a href="#Contacts">Контакты</a>
     </nav>
 
     <main class="main">
       <div class="container">
-        <h1>
+        <img class="main-background-paper" src="assets/images/paper.png" alt="" />
+        <h1 class="animation__lift">
           <span>Забудьте навсегда</span> о простатите, постоянном мочеиспускании
           и проблемах с потенцией
         </h1>
-        <div class="">
-          <div class="main-circles"></div>
+        <div class="main__subtitle">
+          <div class="animation__3-circles">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <p>
             Альфа-мускус - <span>100% натуральная бобровая струя,</span> добытая
             безубийственным методом, в виде настойки, капсул и свечей
           </p>
-          <div></div>
+          <div class="animation__3-circles">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </main>
@@ -116,13 +144,20 @@
         </p>
       </div>
       <form action="" class="discount__form">
-        <input type="text" placeholder="Ваш номер телефона" />
-        <button>Забронировать скидку</button>
+        <input
+          class="discount__tel phone"
+          type="tel"
+          placeholder="Ваш номер телефона"
+          name="phone"
+        />
+        <button class="highlight-button">Забронировать скидку</button>
         <div>
           <input type="checkbox" name="" id="" checked="" />
           <p>
             Нажимая на кнопку, я даю согласие на обработку персональных данных
-            <a href="#">политика конфиденциальности</a>
+            <a class="privacy-policy-popup" href="#Privacy-policy"
+              >политика конфиденциальности</a
+            >
           </p>
         </div>
       </form>
@@ -135,15 +170,26 @@
       </div>
     </section>
 
-    <section class="video">
+    <section class="video" id="Review-Doctor">
       <div class="container">
-        <h2>Доктор Лобанов <span>о препарате АЛЬФА-МУСКУС</span></h2>
+        <h2 class="animation__lift">
+          Доктор Лобанов
+          <span>о препарате АЛЬФА-МУСКУС</span>
+        </h2>
         <div class="video__youtube">
           <img src="assets/images/видео.png" alt="" />
-          <div class="video__play-button">
-            <a href="#">
+          <a
+            class="video__play-button lobanov-video-popup"
+            href="#Lobanov-video"
+          >
+            <div>
               <img src="assets/images/Иконка играть.png" alt="" />
-            </a>
+            </div>
+          </a>
+          <div class="animation__2-scale">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>
@@ -151,9 +197,9 @@
       <img class="video__hand" src="assets/images/Рука.png" alt="" />
     </section>
 
-    <section class="no-problem">
+    <section class="no-problem" id="Indications">
       <div class="container">
-        <h2>
+        <h2 class="animation__lift">
           99 из 100 мужчин
           <span
             >полностью<br />
@@ -207,9 +253,12 @@
       <img src="assets/images/background no-problem.png" alt="" />
     </section>
 
-    <section class="benefits">
+    <section class="benefits" id="Difference">
       <div class="container">
-        <h2><span>Главные отличия</span> Альфа-мускус от аналогов</h2>
+        <h2 class="animation__lift">
+          <span>Главные отличия</span>
+          Альфа-мускус от аналогов
+        </h2>
         <div class="benefits__items">
           <div class="benefits__group">
             <header class="benefits__title">
@@ -224,7 +273,7 @@
                   </div>
                 </div>
                 <div class="benefits__text">
-                  <h3>Высокая концентрация</h3>
+                  <h3 class="animation__lift">Высокая концентрация</h3>
                   <p>
                     Добываем вещество безубийственным способом, обрабатываем и
                     получаем идеальную дозировку для лечения - 3 гр чистого
@@ -242,7 +291,7 @@
                   </div>
                 </div>
                 <div class="benefits__text">
-                  <h3>100% натуральный состав</h3>
+                  <h3 class="animation__lift">100% натуральный состав</h3>
                   <p>
                     Только чистая бобровая струя, вода и спирт, никаких добавок,
                     которые вредят здоровью
@@ -259,7 +308,7 @@
                   </div>
                 </div>
                 <div class="benefits__text">
-                  <h3>Постоянный эффект</h3>
+                  <h3 class="animation__lift">Постоянный эффект</h3>
                   <p>
                     Альфа-мускус лечит проблему, а не просто избавляет на время
                     от симптомов
@@ -276,7 +325,9 @@
                   </div>
                 </div>
                 <div class="benefits__text">
-                  <h3>Совместимость с другими препаратами</h3>
+                  <h3 class="animation__lift">
+                    Совместимость с другими препаратами
+                  </h3>
                   <p>
                     Можно применять с таблетками, БАДами и даже антибиотиками
                   </p>
@@ -292,7 +343,7 @@
                   </div>
                 </div>
                 <div class="benefits__text">
-                  <h3>Не убиваем животных</h3>
+                  <h3 class="animation__lift">Не убиваем животных</h3>
                   <p>
                     Добываем струю уникальным способом, при котором не требуется
                     убивать животное. Отделяем бобровую струю, сушим, получаем
@@ -305,7 +356,11 @@
               </div>
             </div>
             <footer class="benefits__button">
-              <a href="">Заказать</a>
+              <a
+                class="highlight-button order-preparation-popup"
+                href="#Order-preparation"
+                >Заказать</a
+              >
             </footer>
           </div>
           <div class="benefits__group">
@@ -323,7 +378,7 @@
                   </div>
                 </div>
                 <div class="benefits__text">
-                  <h3>Концентрация неизвестна</h3>
+                  <h3 class="animation__lift">Концентрация неизвестна</h3>
                   <p>
                     концентрация вещества, которое добыли у мертвого зверя,
                     неизвестна и часто даже не достигает 1 гр в готовом
@@ -344,7 +399,7 @@
                   </div>
                 </div>
                 <div class="benefits__text">
-                  <h3>Добавки и консерванты</h3>
+                  <h3 class="animation__lift">Добавки и консерванты</h3>
                   <p>
                     в составе дешевые китайские добавки для нейтрализации запаха
                     и более длительного срока годности
@@ -364,7 +419,7 @@
                   </div>
                 </div>
                 <div class="benefits__text">
-                  <h3>Эффект на 1-2 месяца</h3>
+                  <h3 class="animation__lift">Эффект на 1-2 месяца</h3>
                   <p>
                     Вскоре после окончания приема препарата проблема
                     возвращается
@@ -384,7 +439,7 @@
                   </div>
                 </div>
                 <div class="benefits__text">
-                  <h3>Есть противопоказания</h3>
+                  <h3 class="animation__lift">Есть противопоказания</h3>
                   <p>
                     В составе препарата есть химия, поэтому у него будет список
                     противопоказаний и побочных действий
@@ -404,7 +459,9 @@
                   </div>
                 </div>
                 <div class="benefits__text">
-                  <h3>Добывают струю из железы мертвого животного</h3>
+                  <h3 class="animation__lift">
+                    Добывают струю из железы мертвого животного
+                  </h3>
                   <p>
                     Убивают животное, высушивают железу, режут ее на части и
                     замачивают в спирте. Этот настой с сомнительными лечебными
@@ -431,9 +488,9 @@
       />
     </section>
 
-    <section class="improvement">
+    <section class="improvement" id="Impact-on-the-body">
       <div class="container">
-        <h2>
+        <h2 class="animation__lift">
           <span>Вы почувствуете улучшения</span> уже через<br />
           3-5 дней после применения Альфа-мускус
         </h2>
@@ -451,7 +508,7 @@
                 </div>
               </div>
               <div class="improvement__text">
-                <h3>Наладится мочеиспускание</h3>
+                <h3 class="animation__lift">Наладится мочеиспускание</h3>
                 <p>
                   Туалет ночью 1-2 <br />
                   раза вместо 6-7
@@ -465,7 +522,7 @@
                 </div>
               </div>
               <div class="improvement__text">
-                <h3>Легкость и <br />тонус в теле</h3>
+                <h3 class="animation__lift">Легкость и <br />тонус в теле</h3>
                 <p>
                   Появляется энергия<br />
                   на семью и работу
@@ -479,7 +536,7 @@
                 </div>
               </div>
               <div class="improvement__text">
-                <h3>
+                <h3 class="animation__lift">
                   Организм<br />
                   крепнет
                 </h3>
@@ -495,7 +552,7 @@
                 </div>
               </div>
               <div class="improvement__text">
-                <h3>Уйдут неприятные ощущения</h3>
+                <h3 class="animation__lift">Уйдут неприятные ощущения</h3>
                 <p>
                   Проходит дискомфорт<br />
                   и боли в области простаты
@@ -509,7 +566,7 @@
                 </div>
               </div>
               <div class="improvement__text">
-                <h3>Сексуальное влечение</h3>
+                <h3 class="animation__lift">Сексуальное влечение</h3>
                 <p>
                   Вам снова хочется<br />
                   интимной близости
@@ -523,7 +580,7 @@
                 </div>
               </div>
               <div class="improvement__text">
-                <h3>Яркие ощущения</h3>
+                <h3 class="animation__lift">Яркие ощущения</h3>
                 <p>
                   Половой акт становится<br />
                   дольше в 2-3 раза, ощущения усиливаются
@@ -535,7 +592,7 @@
       </div>
     </section>
 
-    <section class="preparation">
+    <section class="preparation" id="To-order">
       <img
         class="preparation__background"
         src="assets/images/background preparation.png"
@@ -552,7 +609,9 @@
         alt=""
       />
       <div class="container">
-        <h2><span>Препарат Альфа-мускус выпускается в 3 формах</span></h2>
+        <h2 class="animation__lift">
+          <span>Препарат Альфа-мускус выпускается в 3 формах</span>
+        </h2>
         <p class="preparation__subtitle">
           Закажите прямо сейчас со скидкой -15%
         </p>
@@ -564,7 +623,11 @@
                 <p><span>для активного лечения</span> мужских проблем</p>
               </div>
               <div class="preparation__image">
-                <img src="assets/images/preparation 1.png" alt="" />
+                <img
+                  class="animation__lift"
+                  src="assets/images/preparation 1.png"
+                  alt=""
+                />
               </div>
               <div class="preparation__count">
                 <p>Объем: <span>200 мл</span></p>
@@ -604,10 +667,18 @@
             </div>
             <footer class="preparation__footer">
               <div>
-                <a href="">Заказать в 1 клик</a>
+                <a
+                  class="highlight-button order-preparation-popup popup-checkbox-1"
+                  href="#Order-preparation"
+                  >Заказать в 1 клик</a
+                >
               </div>
               <div>
-                <a href="">Подробнее</a>
+                <a
+                  class="link__underline more-tincture-popup"
+                  href="#More-tincture"
+                  >Подробнее</a
+                >
               </div>
             </footer>
           </div>
@@ -618,7 +689,11 @@
                 <p><span>для профилактики</span> мужских проблем</p>
               </div>
               <div class="preparation__image">
-                <img src="assets/images/preparation 2.png" alt="" />
+                <img
+                  class="animation__lift"
+                  src="assets/images/preparation 2.png"
+                  alt=""
+                />
               </div>
               <div class="preparation__count">
                 <p>Кол-во: <span>40 капсул</span></p>
@@ -658,10 +733,18 @@
             </div>
             <footer class="preparation__footer">
               <div>
-                <a href="">Заказать в 1 клик</a>
+                <a
+                  class="highlight-button order-preparation-popup popup-checkbox-2"
+                  href="#Order-preparation"
+                  >Заказать в 1 клик</a
+                >
               </div>
               <div>
-                <a href="">Подробнее</a>
+                <a
+                  class="link__underline more-capsules-popup"
+                  href="#More-capsules"
+                  >Подробнее</a
+                >
               </div>
             </footer>
           </div>
@@ -672,7 +755,11 @@
                 <p><span>для активного лечения</span> мужских проблем</p>
               </div>
               <div class="preparation__image">
-                <img src="assets/images/preparation 3.png" alt="" />
+                <img
+                  class="animation__lift"
+                  src="assets/images/preparation 3.png"
+                  alt=""
+                />
               </div>
               <div class="preparation__count">
                 <p>Кол-во: <span>10 свечей</span></p>
@@ -712,10 +799,18 @@
             </div>
             <footer class="preparation__footer">
               <div>
-                <a href="">Заказать в 1 клик</a>
+                <a
+                  class="highlight-button order-preparation-popup popup-checkbox-3"
+                  href="#Order-preparation"
+                  >Заказать в 1 клик</a
+                >
               </div>
               <div>
-                <a href="">Подробнее</a>
+                <a
+                  class="link__underline more-rectal-candles-popup"
+                  href="#More-rectal-candles"
+                  >Подробнее</a
+                >
               </div>
             </footer>
           </div>
@@ -723,76 +818,141 @@
       </div>
     </section>
 
-    <section class="heals">
+    <section class="heals" id="Certificates">
       <div class="container">
-        <h2>
+        <h2 class="animation__lift">
           <span>Альфа-мускус лечит проблему изнутри - </span>болезнь не
           возвращается
         </h2>
         <div class="heals__wrapper">
-          <div class="heals__images">
+          <div class="heals__images gallery">
             <h4>Лицензированое производство в Украине</h4>
-            <img src="assets/images/heals image big.png" alt="" />
-            <div>
-              <img src="assets/images/heals image small 1.png" alt="" />
-              <img src="assets/images/heals image small 2.png" alt="" />
-              <img src="assets/images/heals image small 3.png" alt="" />
+            <a href="assets/images/heals image big.png"
+              ><img src="assets/images/heals image big.png" alt=""
+            /></a>
+            <div class="gallery">
+              <a href="assets/images/heals image small 1.png"
+                ><img src="assets/images/heals image small 1.png" alt=""
+              /></a>
+              <a href="assets/images/heals image small 2.png"
+                ><img src="assets/images/heals image small 2.png" alt=""
+              /></a>
+              <a href="assets/images/heals image small 3.png"
+                ><img src="assets/images/heals image small 3.png" alt=""
+              /></a>
             </div>
           </div>
           <div class="heals__certificates-reviews">
-            <div class="heals__certificates">
+            <div class="heals__certificates gallery">
               <div>
                 <h4>Заключение мин. охраны здоровья</h4>
                 <div>
-                  <img src="assets/images/heals sertificate 1.png" alt="" />
+                  <a href="assets/images/heals sertificate 1.png"
+                    ><img src="assets/images/heals sertificate 1.png" alt=""
+                  /></a>
                 </div>
               </div>
               <div>
                 <h4>Сертификаты и награды</h4>
                 <div>
-                  <img src="assets/images/heals sertificate 2.png" alt="" />
-                  <img src="assets/images/heals sertificate 3.png" alt="" />
+                  <a href="assets/images/heals sertificate 2.png"
+                    ><img src="assets/images/heals sertificate 2.png" alt=""
+                  /></a>
+                  <a href="assets/images/heals sertificate 3.png"
+                    ><img src="assets/images/heals sertificate 3.png" alt=""
+                  /></a>
                 </div>
               </div>
             </div>
             <div class="heals__reviews-doctors">
               <div class="heals__reviews-doctors-title">
                 <h4>Отзывы заслуженных докторов Украины</h4>
-                <div>
-                  <img src="assets/images/heals arrow 1.png" alt="" />
-                  <div>1 / 2</div>
-                  <img src="assets/images/heals arrow 2.png" alt="" />
-                </div>
+                <p>1 / 2</p>
               </div>
-              <div class="heals__doctor-wrapper">
-                <div class="heals__doctor">
-                  <div>
-                    <img src="assets/images/heals doctor.png" alt="" />
-                    <img
-                      class="heals__quotes"
-                      src="assets/images/heals кавычки.png"
-                      alt=""
-                    />
+
+              <!-- <input type="checkbox" class="read-more-checker" id="read-more-checker" /> -->
+              <div class="owl-carousel heals__owl">
+                <div class="heals__doctor-wrapper">
+                  <div class="heals__doctor">
+                    <div>
+                      <img src="assets/images/heals doctor.png" alt="" />
+                      <img
+                        class="heals__quotes"
+                        src="assets/images/heals кавычки.png"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <h5>Лобанов Геннадий Федосеевич</h5>
+                      <h6>
+                        кандидат медицинских наук, главный дермато-венеролог
+                        Киевской области, главврач Киевского областного
+                        кожно-венерологического диспансера
+                      </h6>
+                    </div>
                   </div>
-                  <div>
-                    <h5>Лобанов Геннадий Федосеевич</h5>
-                    <h6>
-                      кандидат медицинских наук, главный дермато-венеролог
-                      Киевской области, главврач Киевского областного
-                      кожно-венерологического диспансера
-                    </h6>
+                  <div class="heals__doctor-comment">
+                    <input type="checkbox" class="read-more__checker" id="read-more-1" />
+                    <p class="read-more__limiter">
+                      В своей практике использую Альфа Мускус Экстракт для
+                      устранения последствий лечения уротрогенных простатитов.
+                      <br />
+                      Дело в том, что это заболевание требует лечения большим
+                      количеством сильных синтетических препаратов, которые, как
+                      говориться, "одно лечат, другое калечат".
+                      <br> <br>
+                      В своей практике использую Альфа Мускус Экстракт для
+                      устранения последствий лечения уротрогенных простатитов.
+                      <br />
+                      Дело в том, что это заболевание требует лечения большим
+                      количеством сильных синтетических препаратов, которые, как
+                      говориться, "одно лечат, другое калечат".
+                      <div class="read-more__bottom"></div>
+                    </p>
+                    <label for="read-more-1" class="read-more__button link__underline">
+                      Читать полностью
+                    </label>
                   </div>
                 </div>
-                <div class="heals__doctor-comment">
-                  <p>
-                    В своей практике использую Альфа Мускус Экстракт для
-                    устранения последствий лечения уротрогенных простатитов.
-                    <br />
-                    Дело в том, что это заболевание требует лечения большим
-                    количеством сильных синтетических препаратов, которые, как
-                    говориться, "одно лечат, другое калечат".
-                  </p>
-                  <a href="#">Читать полностью</a>
+                <div class="heals__doctor-wrapper">
+                  <div class="heals__doctor">
+                    <div>
+                      <img src="assets/images/heals doctor.png" alt="" />
+                      <img
+                        class="heals__quotes"
+                        src="assets/images/heals кавычки.png"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <h5>Лобанов Геннадий Федосеевич</h5>
+                      <h6>
+                        кандидат медицинских наук, главный дермато-венеролог
+                        Киевской области, главврач Киевского областного
+                        кожно-венерологического диспансера
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="heals__doctor-comment">
+                    <input type="checkbox" class="read-more__checker" id="read-more-2" />
+                    <p class="read-more__limiter">
+                      В своей практике использую Альфа Мускус Экстракт для
+                      устранения последствий лечения уротрогенных простатитов.
+                      <br />
+                      Дело в том, что это заболевание требует лечения большим
+                      количеством сильных синтетических препаратов, которые, как
+                      говориться, "одно лечат, другое калечат".
+                      <br> <br>
+                      <br />
+                      Дело в том, что это заболевание требует лечения большим
+                      количеством сильных синтетических препаратов, которые, как
+                      говориться, "одно лечат, другое калечат".
+                      <div class="read-more__bottom"></div>
+                    </p>
+                    <label for="read-more-2" class="read-more__button link__underline">
+                      Читать полностью
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -801,28 +961,25 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="Reviews">
       <img
         class="reviews__background-leaf"
         src="assets/images/Сосна размытая.png"
         alt=""
       />
       <div class="container">
-        <h2><span>Отзывы мужчин</span> после применения Альфа-Мускус</h2>
+        <h2 class="animation__lift">
+          <span>Отзывы мужчин</span>
+          после применения Альфа-Мускус
+        </h2>
         <div class="reviews__buttons">
-          <a href="#">Благодарности</a>
-          <a class="disabled" href="#">Видеоотзывы</a>
+          <a class="highlight-button" href="#Reviews">Благодарности</a>
+          <a class="disabled reviews-video-popup" href="#Reviews-video"
+            >Видеоотзывы</a
+          >
         </div>
-        <div class="reviews__group">
-          <div class="reviews__arrow reviews__arrow-left">
-            <div>
-              <img src="assets/images/reviews-arrow-left.png" alt="" />
-            </div>
-          </div>
-          <div class="reviews__arrow reviews__arrow-right">
-            <img src="assets/images/reviews-arrow-right.png" alt="" />
-          </div>
-          <div class="reviews__item">
+        <div class="owl-carousel reviews__owl">
+          <div class="item reviews__item">
             <div class="reviews__user">
               <img src="assets/images/reviews-user.png" alt="" />
               <div>
@@ -859,7 +1016,7 @@
               </h6>
             </div>
           </div>
-          <div class="reviews__item">
+          <div class="item reviews__item">
             <div class="reviews__user">
               <img src="assets/images/reviews-user.png" alt="" />
               <div>
@@ -896,7 +1053,7 @@
               </h6>
             </div>
           </div>
-          <div class="reviews__item">
+          <div class="item reviews__item">
             <div class="reviews__user">
               <img src="assets/images/reviews-user.png" alt="" />
               <div>
@@ -933,36 +1090,73 @@
               </h6>
             </div>
           </div>
-        </div>
-        <div class="reviews__selects">
-          <div class="reviews__select"></div>
-          <div class="reviews__select reviews__select-active"></div>
-          <div class="reviews__select"></div>
-          <div class="reviews__select"></div>
-          <div class="reviews__select"></div>
-          <div class="reviews__select"></div>
-          <div class="reviews__select"></div>
+          <div class="item reviews__item">
+            <div class="reviews__user">
+              <img src="assets/images/reviews-user.png" alt="" />
+              <div>
+                <h5>Михаил</h5>
+                <div>47 лет</div>
+              </div>
+            </div>
+            <div class="reviews__problem">
+              <p>Проблема:</p>
+              <h6>Отсутствие сексуального влечения</h6>
+            </div>
+            <div class="reviews__problem">
+              <p>Срок применения:</p>
+              <h6>2 месяца</h6>
+            </div>
+            <div class="reviews__problem">
+              <p class="reviews__text">
+                Год назад начались проблемы. В постели. А ведь мне только 31!
+                Врач сказал, что это связанно со стрессами на работе. Во время
+                нечастых интимных связей пользовался Виагрой, но ощущения были
+                не те.. Это были нелегкие времена, у меня все время было
+                <!-- плохое настроение. Пропало желание что-то делать. Каждый раз приходилось заставлять себя вставать по утрам с постели... -->
+              </p>
+            </div>
+            <div class="reviews__problem">
+              <p class="reviews__grade">Оценка эффективности препарата:</p>
+              <h6>
+                5 из 5
+                <img src="assets/images/reviews_звезда.png" alt="" />
+                <img src="assets/images/reviews_звезда.png" alt="" />
+                <img src="assets/images/reviews_звезда.png" alt="" />
+                <img src="assets/images/reviews_звезда.png" alt="" />
+                <img src="assets/images/reviews_звезда.png" alt="" />
+              </h6>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="quiz">
+      <img
+        class="quiz__background"
+        src="assets/images/quiz-background.png"
+        alt=""
+      />
+      <img class="quiz__book" src="assets/images/quiz-book.png" alt="" />
       <div class="container">
-        <h2>
+        <h2 class="animation__lift">
           <span>Узнайте, поможет ли вам альфа-мускус</span><br />
           и какая форма выпуска будет эффективнее
         </h2>
       </div>
     </section>
 
-    <section class="answer">
+    <section class="answer" id="Questions-and-answers">
       <img
         class="answer__background"
         src="assets/images/answer-background.png"
         alt=""
       />
       <div class="container">
-        <h2><span>Отвечаем</span> на ваши часто задаваемые вопросы</h2>
+        <h2 class="animation__lift">
+          <span>Отвечаем</span>
+          на ваши часто задаваемые вопросы
+        </h2>
         <div class="answer__groups">
           <div class="answer__items">
             <div class="answer__item">
@@ -1176,25 +1370,35 @@
             </div>
           </div>
         </div>
-        <footer class="answer__footer">
-          <div class="container">
-            <div class="answer__footer-text">На вопросы отвечает</div>
-            <div class="answer__footer-doctor">
-              <div>Главный специалист центра "Второе сердце мужчины"</div>
-              <div>Руденко Виктор</div>
-            </div>
-            <div class="answer__footer-button">
-              <a href="#">Задать свой вопрос</a>
-            </div>
-          </div>
-        </footer>
       </div>
     </section>
 
-    <section class="order">
+    <section class="answer-footer">
       <div class="container">
-        <h2>
-          <span>Закажите препарат со скидкой</span> <br />-15% прямо сейчас
+        <div class="answer-footer__wrapper">
+          <div class="answer-footer__text">На вопросы отвечает</div>
+        <div class="answer-footer__doctor">
+          <div>Главный специалист центра "Второе сердце мужчины"</div>
+          <div>Руденко Виктор</div>
+        </div>
+        <div class="answer-footer__button">
+          <a class="highlight-button order-consultation-popup" href="#Order-consultation">Задать свой вопрос</a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="How-to-order">
+      <img
+        class="order__background"
+        src="assets/images/order-bakground.png"
+        alt=""
+      />
+      <div class="container">
+        <h2 class="animation__lift">
+          <span>Закажите препарат со скидкой</span>
+          <br />
+          -15% прямо сейчас
         </h2>
         <h3></h3>
         <div class="order__group">
@@ -1214,7 +1418,7 @@
                 </p>
               </div>
               <div>
-                <a href="#">заказать</a>
+                <a class="highlight-button order-preparation-popup" href="#Order-preparation">заказать</a>
               </div>
               <div>
                 <p class="order__tel">
@@ -1266,9 +1470,13 @@
     <section class="products">
       <div class="container">
         <div class="products__container">
-          <img class="products__pen" src="assets/images/products-obj.png" alt="">
+          <img
+            class="products__pen"
+            src="assets/images/products-obj.png"
+            alt=""
+          />
           <h3>
-            <span>Для вас подарок!</span><br>
+            <span>Для вас подарок!</span><br />
             Получите бесплатно чек-лист
           </h3>
           <h2>
@@ -1277,32 +1485,1191 @@
             </span>
           </h2>
           <p>Вам куда отправить файл?</p>
-          <div class="products__group">
-            <div class="products__messanger">
-              <div>
-                <img src="assets/images/ватсап.png" alt="" />
+          <form action="">
+            <div class="products__group">
+              <div class="products__radios">
+                <div class="form__radio_btn">
+                  <input
+                    type="radio"
+                    name="social2"
+                    id="whatsapp2"
+                    value="Whatsapp"
+                  />
+                  <label class="products__messanger" for="whatsapp2">
+                    <div>
+                      <img src="assets/images/ватсап 2.png" alt="" />
+                    </div>
+                    <p>What`s app</p>
+                  </label>
+                </div>
+                <div class="form__radio_btn">
+                  <input
+                    type="radio"
+                    name="social2"
+                    id="viber2"
+                    value="Viber"
+                  />
+                  <label class="products__messanger" for="viber2">
+                    <div>
+                      <img src="assets/images/вайбер 2.png" alt="" />
+                    </div>
+                    <p>Viber</p>
+                  </label>
+                </div>
+                <div class="form__radio_btn">
+                  <input
+                    type="radio"
+                    name="social2"
+                    id="telegram2"
+                    value="Telegram"
+                  />
+                  <label class="products__messanger" for="telegram2">
+                    <div>
+                      <img src="assets/images/телеграм 2.png" alt="" />
+                    </div>
+                    <p>Telegram</p>
+                  </label>
+                </div>
               </div>
-              <p>What`s app</p>
-            </div>
-            <div class="products__messanger">
-              <div>
-                <img src="assets/images/вайбер.png" alt="" />
+              <div class="products__input">
+                <input
+                  class="phone"
+                  type="tel"
+                  placeholder="Ваш телефон"
+                  name="phone"
+                />
               </div>
-              <p>viber</p>
-            </div>
-            <div class="products__messanger">
-              <div>
-                <img src="assets/images/телеграм .png" alt="" />
+              <div class="products__button">
+                <button class="highlight-button">Скачать</button>
               </div>
-              <p>Telegram</p>
             </div>
-            <div class="products__messanger">
-              <input type="text">
+            <div class="products__checkbox">
+              <input type="checkbox" name="" id="" checked />
+              <p>
+                Нажимая на кнопку, я даю согласие на обработку персональных
+                данных
+                <a class="privacy-policy-popup" href="#Privacy-policy"
+                  >политика конфиденциальности</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="Contacts">
+      <img class="about__pin" src="assets/images/Сосна размытая 2.png" alt="" />
+      <div class="container">
+        <h2 class="animation__lift">
+          <span>Контакты</span>
+        </h2>
+        <div class="about__group">
+          <div class="about__contacts">
+            <h3>Телефоны</h3>
+            <div class="about__telephone">
+              <div><img src="assets/images/about-telephone.png" alt="" /></div>
+              <div>
+                (067) 854-90-60 <br />
+                (050) 848-97-89 <br />
+                (044) 333-66-92
+              </div>
+            </div>
+            <h3>Адрес:</h3>
+            <div class="about__adress">
+              <div><img src="assets/images/about-navigator.png" alt="" /></div>
+              <p>
+                г. Киев, ул. Василя <br />
+                Степанченка, 4а
+              </p>
+            </div>
+            <h3>Время работы</h3>
+            <p class="about__time">
+              9:00-18:00
+              <span>без выходных</span>
+            </p>
+            <h3>Почта</h3>
+            <p class="about__email">inessa_tkachuk@ukr.net</p>
+            <div class="about__write">
+              <h3>Пишите:</h3>
+              <div class="about__messangers">
+                <div>
+                  <img src="assets/images/ватсап 2.png" alt="" />
+                </div>
+                <div>
+                  <img src="assets/images/вайбер 2.png" alt="" />
+                </div>
+                <div>
+                  <img src="assets/images/телеграм 2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about__menu">
+            <h3>Меню сайта</h3>
+            <a href="#">Показания</a>
+            <a href="#">Отличие от аналогов </a>
+            <a href="#">Влияние на организм</a>
+            <a href="#">Заказать </a>
+            <a href="#">Сертификаты и лицензии</a>
+            <a href="#">Отзывы </a>
+            <a href="#">Вопросы и ответы</a>
+            <a href="#">Как заказать</a>
+            <a href="#">Контакты</a>
+            <a class="about__link_blue privacy-policy-popup" href="#Privacy-policy">Политика конфиденциальности</a>
+            <a class="about__link_blue" href="assets/pdf/5 продуктов.pdf" download=""
+              >Скачать инструкцию по применению</a
+            >
+          </div>
+          <div class="about__benefits">
+            <h3>Преимущества препарата</h3>
+            <div class="about__item">
+              <div>
+                <div>
+                  <img src="assets/images/иконка галочка.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <h4>Высокая концентрация вещества</h4>
+                <p>
+                  Добываем вещество безубийственным способом и гарантируем
+                  98%-ное содержание чистой бобровой струи в готовом препарате
+                </p>
+              </div>
+            </div>
+            <div class="about__item">
+              <div>
+                <div>
+                  <img src="assets/images/иконка галочка.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <h4>100% натуральный состав</h4>
+                <p>
+                  Только чистая бобровая струя, вода и спирт, никаких добавок,
+                  которые вредят здоровью
+                </p>
+              </div>
+            </div>
+            <div class="about__item">
+              <div>
+                <div>
+                  <img src="assets/images/иконка галочка.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <h4>Постоянный эффект</h4>
+                <p>
+                  Альфа-мускус лечит проблему, а не просто избавляет на время от
+                  симптомов
+                </p>
+              </div>
+            </div>
+            <div class="about__item">
+              <div>
+                <div>
+                  <img src="assets/images/иконка галочка.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <h4>Совместимость с другими препаратами</h4>
+                <p>Можно применять с таблетками, БАДами и даже антибиотиками</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="map">
+      <div class="container">
+        <div class="map__wrapper">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A07df7699f317631dd6e7de5b5718407fe5ce1263db25cf71fc687968b7f287d2&amp;source=constructor"
+            width="100%"
+            height="350"
+            frameborder="0"
+          ></iframe>
+          <div class="map__adress">
+            <h3>Адрес производства:</h3>
+            <div class="map__group">
+              <img src="assets/images/map-1.png" alt="" />
+              <img src="assets/images/map-1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <div class="footer__name">
+            Производитель бобровой струи <br />
+            для лечения мужских болезней
+          </div>
+          <div class="footer__copyright">
+            Copyright 2022 Все права защищены<br />
+            <a class="privacy-policy-popup" href="#Privacy-policy"
+                  >политика конфиденциальности</a
+                >
+          </div>
+          <div class="footer__paradigma">
+            Сделано с любовью <br />
+            в <a href="#">Paradigma website</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="Order-consultation" class="mfp-hide">
+      <div class="order-consultation">
+        <img
+          class="order-consultation__background"
+          src="assets/images/order-consultation-background.png"
+          alt=""
+        />
+        <div class="order-consultation__wrapper">
+          <h2>
+            <span>Перезвоним для</span>
+            <br />
+            подробной консультации
+          </h2>
+          <div class="order-consultation__group">
+            <div class="order-consultation__item">
+              <div>
+                <img src="assets/images/иконка галочка.png" alt="" />
+              </div>
+              <p>Перезвоним через 5 минут</p>
+            </div>
+            <div class="order-consultation__item">
+              <div>
+                <img src="assets/images/иконка галочка.png" alt="" />
+              </div>
+              <p>Звонок бесплатный</p>
+            </div>
+            <div class="order-consultation__item">
+              <div>
+                <img src="assets/images/иконка галочка.png" alt="" />
+              </div>
+              <p>Полностью анонимно</p>
+            </div>
+          </div>
+          <form action="" class="order-consultation__form">
+            <div class="order-consultation__input">
+              <input class="phone" type="tel" placeholder="Ваш телефон" />
+              <button class="highlight-button">
+                Получить <br />
+                консультацию
+              </button>
+            </div>
+            <div class="order-consultation__checkbox">
+              <input type="checkbox" name="" id="" checked />
+              <p>
+                Нажимая на кнопку, я даю согласие на обработку персональных
+                данных
+                <a class="privacy-policy-popup" href="#Privacy-policy"
+                  >политика конфиденциальности</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="Lobanov-video" class="mfp-hide">
+      <div class="lobanov-video">
+        <iframe
+          width="1170"
+          height="658"
+          src="https://www.youtube.com/embed/fP5AwfaB5CU?controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div id="Reviews-video" class="mfp-hide">
+      <div class="reviews-video">Видеоотзывы...</div>
+    </div>
+
+    <div id="More-tincture" class="mfp-hide">
+      <div class="more-tincture">
+        <div class="more-tincture__product">
+          <div>
+            <div class="more-tincture__image">
+              <img src="assets/images/more-tincture-1.png" alt="" />
+              <div class="more-tincture__availability">
+                <div class="more-tincture__availability-icon">
+                  <img src="assets/images/иконка галочка.png" alt="" />
+                </div>
+                <div class="more-tincture__availability-text">в наличии</div>
+              </div>
+              <a
+                class="more-tincture__link link__underline more-certeficate-popup"
+                href=""
+                id="More-certeficate"
+                >Смотреть сертификаты качества</a
+              >
+              <!-- <a href="" id="More-certeficate">Open popup</ф> -->
+            </div>
+            <div class="more-tincture__description">
+              <h3>Настойка Альфа-Мускус для приема внутрь</h3>
+              <p>Подходит для лечения мужских проблем в активной стадии</p>
+              <div class="divider"></div>
+              <p>
+                <span>Объем:</span> 200 мл <br />
+                <span>Состав:</span> 98% бобровая струя, 2% спирт
+              </p>
+              <div class="divider"></div>
+              <p>
+                Настойку Альфа-мускус применяют для лечения и профилактики
+                мужских заболеваний: <br />
+                - простатит<br />
+                - аденома<br />
+                - вирусные заболевания<br />
+                - импотенция<br />
+                - геморрой<br />
+                - и др.
+              </p>
+              <div class="divider"></div>
+              <p>
+                1 столовая ложка 3 раза в день<br />
+                <span>Рекомендуемый курс:</span> 2-3 месяца<br />
+                <span>Срок годности:</span> 9 месяцев с даты изготовления
+              </p>
+              <div class="more-tincture__price">
+                <div>
+                  <p><span>650</span>грн</p>
+                  <p><span>790</span>грн</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more-tincture__benedits">
+          <div class="order-consultation__group">
+            <div class="order-consultation__item">
+              <div>
+                <img src="assets/images/иконка галочка.png" alt="" />
+              </div>
+              <p>100% натуральный состав</p>
+            </div>
+            <div class="order-consultation__item">
+              <div>
+                <img src="assets/images/иконка галочка.png" alt="" />
+              </div>
+              <p>безопасна для здоровья</p>
+            </div>
+            <div class="order-consultation__item">
+              <div>
+                <img src="assets/images/иконка галочка.png" alt="" />
+              </div>
+              <p>можно применять с другими препаратами</p>
+            </div>
+          </div>
+        </div>
+        <div class="more-tincture__order">
+          <div class="order-preparation__group">
+            <div class="order-preparation__benefits">
+              <div class="order-preparation__delivery">
+                <div>
+                  <img src="assets/images/Иконка грузовик.png" alt="" />
+                </div>
+                <p>Доставка почтой <span>по всей территории Украины</span></p>
+              </div>
+              <div class="order-preparation__card">
+                <div>
+                  <img src="assets/images/Иконка карта оплаты.png" alt="" />
+                </div>
+                <p>Оплата <span>при получении товара</span></p>
+              </div>
+            </div>
+            <form class="order-preparation__form form">
+              <input id="preparation-1" type="hidden" name="radio" value="1" />
+              <h2>Закажите препарат Альфа-мускус</h2>
+              <div class="order-preparation__count-adress">
+                <div>
+                  <p class="order-preparation__description">Количество</p>
+                  <div class="form__decrease-increase">
+                    <button class="form__decrease" type="button">-</button>
+                    <input
+                      type="number"
+                      name="field"
+                      value="1"
+                      min="1"
+                      max="9"
+                    />
+                    <button class="form__increase" type="button">+</button>
+                  </div>
+                </div>
+                <div>
+                  <p class="order-preparation__description">
+                    Данные для доставки
+                  </p>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Адрес, индекс, ваше ФИО"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="order-preparation__telephone-button form__telephone-button"
+              >
+                <div class="form__telephone">
+                  <input
+                    class="phone"
+                    type="tel"
+                    placeholder="Ваш телефон"
+                    required
+                  />
+                </div>
+                <div class="form__button">
+                  <button class="highlight-button">Заказть</button>
+                </div>
+              </div>
+              <div class="order-preparation__specialist-checkbox">
+                <p class="order-preparation__specialist">
+                  Наш специалист свяжется с вами для подтверждения заказа
+                </p>
+                <div class="order-preparation__checkbox form__checkbox">
+                  <div>
+                    <input type="checkbox" name="" id="" checked required />
+                  </div>
+                  <div>
+                    Нажимая на кнопку, я даю согласие на обработку персональных
+                    данных
+                    <a href="#">политика конфиденциальности</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="More-capsules" class="mfp-hide">
+      <div class="more-tincture">
+        <div class="more-tincture__product">
+          <div>
+            <div class="more-tincture__image">
+              <img src="assets/images/more-tincture-3.png" alt="" />
+              <div class="more-tincture__availability">
+                <div class="more-tincture__availability-icon">
+                  <img src="assets/images/иконка галочка.png" alt="" />
+                </div>
+                <div class="more-tincture__availability-text">в наличии</div>
+              </div>
+              <a class="more-tincture__link link__underline" href="#"
+                >Смотреть сертификаты качества</a
+              >
+            </div>
+            <div class="more-tincture__description">
+              <h3>Капсулы Альфа-Мускус для приема внутрь</h3>
+              <p>Подходят для профилактики возникновения мужских проблем</p>
+              <div class="divider"></div>
+              <p>
+                <span>Количество:</span> 40 капсул <br />
+                <span>Состав:</span> 98% бобровая струя, 2% спирт
+              </p>
+              <div class="divider"></div>
+              <p>
+                Капсулы Альфа-мускус применяют для
+                <span>лечения и профилактики</span> мужских заболеваний:<br />
+                - простатит<br />
+                - аденома<br />
+                - вирусные заболевания<br />
+                - импотенция<br />
+                - геморрой<br />
+                А также
+                <span>для восстановления эрекции и сексуального влечения.</span>
+              </p>
+              <div class="divider"></div>
+              <p>
+                1 капсула 3 раза в день<br />
+                <span>Рекомендуемый курс:</span> 1,5-2,5 месяца<br />
+                <span>Срок годности:</span> 9 месяцев с даты изготовления
+              </p>
+              <div class="more-tincture__price">
+                <div>
+                  <p><span>490</span>грн</p>
+                  <p><span>580</span>грн</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more-tincture__benedits">
+          <div class="order-consultation__group">
+            <div class="order-consultation__item">
+              <div>
+                <img src="assets/images/иконка галочка.png" alt="" />
+              </div>
+              <p>100% натуральный состав</p>
+            </div>
+            <div class="order-consultation__item">
+              <div>
+                <img src="assets/images/иконка галочка.png" alt="" />
+              </div>
+              <p>безопасна для здоровья</p>
+            </div>
+            <div class="order-consultation__item">
+              <div>
+                <img src="assets/images/иконка галочка.png" alt="" />
+              </div>
+              <p>можно применять с другими препаратами</p>
+            </div>
+          </div>
+        </div>
+        <div class="more-tincture__order">
+          <div class="order-preparation__group">
+            <div class="order-preparation__benefits">
+              <div class="order-preparation__delivery">
+                <div>
+                  <img src="assets/images/Иконка грузовик.png" alt="" />
+                </div>
+                <p>Доставка почтой <span>по всей территории Украины</span></p>
+              </div>
+              <div class="order-preparation__card">
+                <div>
+                  <img src="assets/images/Иконка карта оплаты.png" alt="" />
+                </div>
+                <p>Оплата <span>при получении товара</span></p>
+              </div>
+            </div>
+            <form class="order-preparation__form form">
+              <input id="preparation-2" type="hidden" name="radio" value="2" />
+              <h2>Закажите препарат Альфа-мускус</h2>
+              <div class="order-preparation__count-adress">
+                <div>
+                  <p class="order-preparation__description">Количество</p>
+                  <div class="form__decrease-increase">
+                    <button class="form__decrease" type="button">-</button>
+                    <input
+                      type="number"
+                      name="field"
+                      value="1"
+                      min="1"
+                      max="9"
+                    />
+                    <button class="form__increase" type="button">+</button>
+                  </div>
+                </div>
+                <div>
+                  <p class="order-preparation__description">
+                    Данные для доставки
+                  </p>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Адрес, индекс, ваше ФИО"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="order-preparation__telephone-button form__telephone-button"
+              >
+                <div class="form__telephone">
+                  <input
+                    class="phone"
+                    type="tel"
+                    placeholder="Ваш телефон"
+                    required
+                  />
+                </div>
+                <div class="form__button">
+                  <button class="highlight-button">Заказть</button>
+                </div>
+              </div>
+              <div class="order-preparation__specialist-checkbox">
+                <p class="order-preparation__specialist">
+                  Наш специалист свяжется с вами для подтверждения заказа
+                </p>
+                <div class="order-preparation__checkbox form__checkbox">
+                  <div>
+                    <input type="checkbox" name="" id="" checked required />
+                  </div>
+                  <div>
+                    Нажимая на кнопку, я даю согласие на обработку персональных
+                    данных
+                    <a href="#">политика конфиденциальности</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="More-rectal-candles" class="mfp-hide">
+      <div class="more-tincture">
+        <div class="more-tincture__product">
+          <div>
+            <div class="more-tincture__image">
+              <img src="assets/images/more-tincture-2.png" alt="" />
+              <div class="more-tincture__availability">
+                <div class="more-tincture__availability-icon">
+                  <img src="assets/images/иконка галочка.png" alt="" />
+                </div>
+                <div class="more-tincture__availability-text">в наличии</div>
+              </div>
+              <a class="more-tincture__link link__underline" href="#"
+                >Смотреть сертификаты качества</a
+              >
+            </div>
+            <div class="more-tincture__description">
+              <h3>Ректальные свечи Альфа-Мускус</h3>
+              <p>Подходит для лечения мужских проблем в активной стадии</p>
+              <div class="divider"></div>
+              <p>
+                <span>Объем:</span> 10 свечей <br />
+                <span>Состав:</span> 98% бобровая струя, 2% спирт
+              </p>
+              <div class="divider"></div>
+              <p>
+                Свечи Альфа-мускус
+                <span>применяют для лечения и профилактики</span> мужских
+                заболеваний:<br />
+                - простатит<br />
+                - аденома<br />
+                - вирусные заболевания<br />
+                - импотенция<br />
+                - геморрой<br />
+              </p>
+              <div class="divider"></div>
+              <p>
+                1 свеча на ночь<br />
+                <span>Рекомендуемый курс:</span> 1-2 месяца<br />
+                <span>Срок годности:</span> 9 месяцев с даты изготовления
+              </p>
+              <div class="more-tincture__price">
+                <div>
+                  <p><span>480</span>грн</p>
+                  <p><span>610</span>грн</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more-tincture__benedits">
+          <div class="order-consultation__group">
+            <div class="order-consultation__item">
+              <div>
+                <img src="assets/images/иконка галочка.png" alt="" />
+              </div>
+              <p>100% натуральный состав</p>
+            </div>
+            <div class="order-consultation__item">
+              <div>
+                <img src="assets/images/иконка галочка.png" alt="" />
+              </div>
+              <p>безопасна для здоровья</p>
+            </div>
+            <div class="order-consultation__item">
+              <div>
+                <img src="assets/images/иконка галочка.png" alt="" />
+              </div>
+              <p>можно применять с другими препаратами</p>
+            </div>
+          </div>
+        </div>
+        <div class="more-tincture__order">
+          <div class="order-preparation__group">
+            <div class="order-preparation__benefits">
+              <div class="order-preparation__delivery">
+                <div>
+                  <img src="assets/images/Иконка грузовик.png" alt="" />
+                </div>
+                <p>Доставка почтой <span>по всей территории Украины</span></p>
+              </div>
+              <div class="order-preparation__card">
+                <div>
+                  <img src="assets/images/Иконка карта оплаты.png" alt="" />
+                </div>
+                <p>Оплата <span>при получении товара</span></p>
+              </div>
+            </div>
+            <form class="order-preparation__form form">
+              <input id="preparation-3" type="hidden" name="radio" value="3" />
+              <h2>Закажите препарат Альфа-мускус</h2>
+              <div class="order-preparation__count-adress">
+                <div>
+                  <p class="order-preparation__description">Количество</p>
+                  <div class="form__decrease-increase">
+                    <button class="form__decrease" type="button">-</button>
+                    <input
+                      type="number"
+                      name="field"
+                      value="1"
+                      min="1"
+                      max="9"
+                    />
+                    <button class="form__increase" type="button">+</button>
+                  </div>
+                </div>
+                <div>
+                  <p class="order-preparation__description">
+                    Данные для доставки
+                  </p>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Адрес, индекс, ваше ФИО"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="order-preparation__telephone-button form__telephone-button"
+              >
+                <div class="form__telephone">
+                  <input
+                    class="phone"
+                    type="tel"
+                    placeholder="Ваш телефон"
+                    required
+                  />
+                </div>
+                <div class="form__button">
+                  <button class="highlight-button">Заказть</button>
+                </div>
+              </div>
+              <div class="order-preparation__specialist-checkbox">
+                <p class="order-preparation__specialist">
+                  Наш специалист свяжется с вами для подтверждения заказа
+                </p>
+                <div class="order-preparation__checkbox form__checkbox">
+                  <div>
+                    <input type="checkbox" name="" id="" checked required />
+                  </div>
+                  <div>
+                    Нажимая на кнопку, я даю согласие на обработку персональных
+                    данных
+                    <a href="#">политика конфиденциальности</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Order-preparation" class="mfp-hide">
+      <div class="order-preparation">
+        <img
+          class="order-preparation__background"
+          src="assets/images/order-preparation-background.png"
+          alt=""
+        />
+        <div class="order-preparation__group">
+          <div class="order-preparation__benefits">
+            <div class="order-preparation__delivery">
+              <div><img src="assets/images/Иконка грузовик.png" alt="" /></div>
+              <p>Доставка почтой <span>по всей территории Украины</span></p>
+            </div>
+            <div class="order-preparation__card">
+              <div>
+                <img src="assets/images/Иконка карта оплаты.png" alt="" />
+              </div>
+              <p>Оплата <span>при получении товара</span></p>
+            </div>
+          </div>
+          <form class="order-preparation__form form">
+            <h2>Закажите препарат Альфа-мускус</h2>
+            <p class="order-preparation__description">Выберите форму выпуска</p>
+            <div class="order-preparation__radios">
+              <div class="form__radio_btn">
+                <input id="preparation-1" type="radio" name="radio" value="1" />
+                <label for="preparation-1">Настойка</label>
+              </div>
+              <div class="form__radio_btn">
+                <input
+                  id="preparation-2"
+                  type="radio"
+                  name="radio"
+                  value="2"
+                  checked
+                />
+                <label for="preparation-2">Капсулы</label>
+              </div>
+              <div class="form__radio_btn">
+                <input id="preparation-3" type="radio" name="radio" value="3" />
+                <label for="preparation-3">Свечи</label>
+              </div>
+            </div>
+            <div class="order-preparation__count-adress">
+              <div>
+                <p class="order-preparation__description">Количество</p>
+                <div class="form__decrease-increase">
+                  <button class="form__decrease" type="button">-</button>
+                  <input type="number" name="field" value="1" min="1" max="9" />
+                  <button class="form__increase" type="button">+</button>
+                </div>
+              </div>
+              <div>
+                <p class="order-preparation__description">
+                  Данные для доставки
+                </p>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Адрес, индекс, ваше ФИО"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="order-preparation__telephone-button form__telephone-button"
+            >
+              <div class="form__telephone">
+                <input
+                  class="phone"
+                  type="tel"
+                  placeholder="Ваш телефон"
+                  required
+                />
+              </div>
+              <div class="form__button">
+                <button class="highlight-button">Заказть</button>
+              </div>
+            </div>
+            <div class="order-preparation__specialist-checkbox">
+              <p class="order-preparation__specialist">
+                Наш специалист свяжется с вами для подтверждения заказа
+              </p>
+              <div class="order-preparation__checkbox form__checkbox">
+                <div>
+                  <input type="checkbox" name="" id="" checked required />
+                </div>
+                <div>
+                  Нажимая на кнопку, я даю согласие на обработку персональных
+                  данных
+                  <a href="#">политика конфиденциальности</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="Privacy-policy" class="mfp-hide">
+      <div class="privacy-policy">
+        <p class="popup-header">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</p>
+        <p class="popup-text">
+          Настоящая Политика конфиденциальности персональных данных (далее –
+          Политика конфиденциальности) действует в отношении всей информации,
+          которую данный сайт, на котором размещен текст этой Политики
+          конфиденциальности, может получить о Пользователе, а также любых
+          программ и продуктов, размещенных на нем.
+        </p>
+        <p class="popup-header">1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</p>
+        <p class="popup-text">
+          1.1. В настоящей Политике конфиденциальности используются следующие
+          термины:
+        </p>
+        <p class="popup-text">
+          1.1.1. «Администрация сайта» – уполномоченные сотрудники на управления
+          сайтом, действующие от его имени, которые организуют и (или)
+          осуществляет обработку персональных данных, а также определяет цели
+          обработки персональных данных, состав персональных данных, подлежащих
+          обработке, действия (операции), совершаемые с персональными данными.
+        </p>
+        <p class="popup-text">
+          1.1.2. «Персональные данные» — любая информация, относящаяся к прямо
+          или косвенно определенному или определяемому физическому лицу
+          (субъекту персональных данных).
+        </p>
+        <p class="popup-text">
+          1.1.3. «Обработка персональных данных» — любое действие (операция) или
+          совокупность действий (операций), совершаемых с использованием средств
+          автоматизации или без использования таких средств с персональными
+          данными, включая сбор, запись, систематизацию, накопление, хранение,
+          уточнение (обновление, изменение), извлечение, использование, передачу
+          (распространение, предоставление, доступ), обезличивание,
+          блокирование, удаление, уничтожение персональных данных.
+        </p>
+        <p class="popup-text">
+          1.1.4. «Конфиденциальность персональных данных» — обязательное для
+          соблюдения Администрацией сайта требование не допускать их умышленного
+          распространения без согласия субъекта персональных данных или наличия
+          иного законного основания.
+        </p>
+        <p class="popup-text">
+          1.1.5. «Пользователь сайта (далее Пользователь)» – лицо, имеющее
+          доступ к сайту, посредством сети Интернет и использующее данный сайт
+          для своих целей.
+        </p>
+        <p class="popup-text">
+          1.1.6. «Cookies» — небольшой фрагмент данных, отправленный
+          веб-сервером и хранимый на компьютере пользователя, который веб-клиент
+          или веб-браузер каждый раз пересылает веб-серверу в HTTP-запросе при
+          попытке открыть страницу соответствующего сайта.
+        </p>
+        <p class="popup-text">
+          1.1.7. «IP-адрес» — уникальный сетевой адрес узла в компьютерной сети,
+          построенной по протоколу IP.
+        </p>
+        <p class="popup-header">ОБЩИЕ ПОЛОЖЕНИЯ</p>
+        <p class="popup-text">
+          2.1. Использование Пользователем сайта означает согласие с настоящей
+          Политикой конфиденциальности и условиями обработки персональных данных
+          Пользователя.
+        </p>
+        <p class="popup-text">
+          2.2. В случае несогласия с условиями Политики конфиденциальности
+          Пользователь должен прекратить использование сайта.
+        </p>
+        <p class="popup-text">
+          2.3. Настоящая Политика конфиденциальности применяется только к
+          данному сайту. Администрация сайта не контролирует и не несет
+          ответственность за сайты третьих лиц, на которые Пользователь может
+          перейти по ссылкам, доступным на данном сайте.
+        </p>
+        <p class="popup-text">
+          2.4. Администрация сайта не проверяет достоверность персональных
+          данных, предоставляемых Пользователем сайта.
+        </p>
+        <p class="popup-header">ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ</p>
+        <p class="popup-text">
+          3.1. Настоящая Политика конфиденциальности устанавливает обязательства
+          Администрации сайта по умышленному неразглашению персональных данных,
+          которые Пользователь предоставляет по разнообразным запросам
+          Администрации сайта (например, при регистрации на сайте, оформлении
+          заказа, подписки на уведомления и т.п).
+        </p>
+        <p class="popup-text">
+          3.2. Персональные данные, разрешённые к обработке в рамках настоящей
+          Политики конфиденциальности, предоставляются Пользователем путём
+          заполнения специальных форм на Сайте и обычно включают в себя
+          следующую информацию:
+        </p>
+        <p class="popup-text">3.2.1. фамилию, имя, отчество Пользователя;</p>
+        <p class="popup-text">3.2.2. контактный телефон Пользователя;</p>
+        <p class="popup-text">3.2.3. адрес электронной почты (e-mail);</p>
+        <p class="popup-text">
+          3.2.4. место жительство Пользователя и другие данные.
+        </p>
+        <p class="popup-text">
+          3.3. Администрация сайта также принимает усилия по защите Персональных
+          данных, которые автоматически передаются в процессе посещения страниц
+          сайта:
+        </p>
+        <p class="popup-text">IP адрес;</p>
+        <p class="popup-text">информация из cookies;</p>
+        <p class="popup-text">
+          информация о браузере (или иной программе, которая осуществляет доступ
+          к сайту);
+        </p>
+        <p class="popup-text">время доступа;</p>
+        <p class="popup-text">посещенные адреса страниц;</p>
+        <p class="popup-text">реферер (адрес предыдущей страницы) и т.п.</p>
+        <p class="popup-text">
+          3.3.1. Отключение cookies может повлечь невозможность доступа к сайту.
+        </p>
+        <p class="popup-text">
+          3.3.2. Сайт осуществляет сбор статистики об IP-адресах своих
+          посетителей. Данная информация используется с целью выявления и
+          решения технических проблем, для контроля корректности проводимых
+          операций.
+        </p>
+        <p class="popup-text">
+          3.4. Любая иная персональная информация неоговоренная выше (история
+          заказов, используемые браузеры и операционные системы и т.д.) не
+          подлежит умышленному разглашению, за исключением случаев,
+          предусмотренных в п.п. 5.2. и 5.3. настоящей Политики
+          конфиденциальности.
+        </p>
+        <p class="popup-header">
+          4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ
+        </p>
+        <p class="popup-text">
+          4.1. Персональные данные Пользователя Администрация сайта может
+          использовать в целях:
+        </p>
+        <p class="popup-text">
+          4.1.1. Идентификации Пользователя, зарегистрированного на сайте, для
+          оформления заказа и (или) заключения Договора.
+        </p>
+        <p class="popup-text">
+          4.1.2. Предоставления Пользователю доступа к персонализированным
+          ресурсам сайта.
+        </p>
+        <p class="popup-text">
+          4.1.3. Установления с Пользователем обратной связи, включая
+          направление уведомлений, запросов, касающихся использования сайта,
+          оказания услуг, обработка запросов и заявок от Пользователя.
+        </p>
+        <p class="popup-text">
+          4.1.4. Определения места нахождения Пользователя для обеспечения
+          безопасности, предотвращения мошенничества.
+        </p>
+        <p class="popup-text">
+          4.1.5. Подтверждения достоверности и полноты персональных данных,
+          предоставленных Пользователем.
+        </p>
+        <p class="popup-text">
+          4.1.6. Создания учетной записи для совершения заказов, если
+          Пользователь дал согласие на создание учетной записи.
+        </p>
+        <p class="popup-text">
+          4.1.7. Уведомления Пользователя сайта о состоянии Заказа.
+        </p>
+        <p class="popup-text">4.1.8. Обработки и получения платежей.</p>
+        <p class="popup-text">
+          4.1.9. Предоставления Пользователю эффективной клиентской и
+          технической поддержки при возникновении проблем, связанных с
+          использованием сайта.
+        </p>
+        <p class="popup-text">
+          4.1.10. Предоставления Пользователю с его согласия, обновлений
+          продукции, специальных предложений, информации о ценах, новостной
+          рассылки и иных сведений от имени сайта или от имени партнеров сайта.
+        </p>
+        <p class="popup-text">
+          4.1.11. Осуществления рекламной деятельности с согласия Пользователя.
+        </p>
+        <p class="popup-text">
+          4.1.12. Предоставления доступа Пользователю на сторонние сайты или
+          сервисы партнеров данного сайта с целью получения их предложений,
+          обновлений или услуг.
+        </p>
+        <p class="popup-header">
+          5. СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ
+        </p>
+        <p class="popup-text">
+          5.1. Обработка персональных данных Пользователя осуществляется без
+          ограничения срока, любым законным способом, в том числе в
+          информационных системах персональных данных с использованием средств
+          автоматизации или без использования таких средств.
+        </p>
+        <p class="popup-text">
+          5.2. Пользователь соглашается с тем, что Администрация сайта вправе
+          передавать персональные данные третьим лицам, в частности, курьерским
+          службам, организациями почтовой связи, операторам электросвязи,
+          исключительно в целях выполнения заявок Пользователя, оформленных на
+          сайте, в рамках Договора публичной оферты
+        </p>
+        <p class="popup-text">
+          5.3. Персональные данные Пользователя могут быть переданы
+          уполномоченным органам государственной власти только по основаниям и в
+          порядке, установленным действующим законодательством.
+        </p>
+        <p class="popup-header">6. ОБЯЗАТЕЛЬСТВА СТОРОН</p>
+        <p class="popup-text">6.1. Пользователь обязуется:</p>
+        <p class="popup-text">
+          6.1.1. Предоставить корректную и правдивую информацию о персональных
+          данных, необходимую для пользования сайтом.
+        </p>
+        <p class="popup-text">
+          6.1.2. Обновить или дополнить предоставленную информацию о
+          персональных данных в случае изменения данной информации.
+        </p>
+        <p class="popup-text">
+          6.1.3. Принимать меры для защиты доступа к своим конфиденциальным
+          данным, хранящимся на сайте.
+        </p>
+        <p class="popup-text">6.2. Администрация сайта обязуется:</p>
+        <p class="popup-text">
+          6.2.1. Использовать полученную информацию исключительно для целей,
+          указанных в п. 4 настоящей Политики конфиденциальности.
+        </p>
+        <p class="popup-text">
+          6.2.2. Не разглашать персональных данных Пользователя, за исключением
+          п.п. 5.2. и 5.3. настоящей Политики Конфиденциальности.
+        </p>
+        <p class="popup-text">
+          6.2.3. Осуществить блокирование персональных данных, относящихся к
+          соответствующему Пользователю, с момента обращения или запроса
+          Пользователя или его законного представителя либо уполномоченного
+          органа по защите прав субъектов персональных данных на период
+          проверки, в случае выявления недостоверных персональных данных или
+          неправомерных действий.
+        </p>
+        <p class="popup-header">7. ОТВЕТСТВЕННОСТЬ СТОРОН</p>
+        <p class="popup-text">
+          7.1. Администрация сайта несёт ответственность за умышленное
+          разглашение Персональных данных Пользователя в соответствии с
+          действующим законодательством, за исключением случаев, предусмотренных
+          п.п. 5.2., 5.3. и 7.2. настоящей Политики Конфиденциальности
+        </p>
+        <p class="popup-text">
+          7.2. В случае утраты или разглашения Персональных данных Администрация
+          сайта не несёт ответственность, если данная конфиденциальная
+          информация:
+        </p>
+        <p class="popup-text">
+          7.2.1. Стала публичным достоянием до её утраты или разглашения.
+        </p>
+        <p class="popup-text">
+          7.2.2. Была получена от третьей стороны до момента её получения
+          Администрацией сайта.
+        </p>
+        <p class="popup-text">
+          7.2.3. Была получена третьими лицами путем несанкционированного
+          доступа к файлам сайта.
+        </p>
+        <p class="popup-text">
+          7.2.4. Была разглашена с согласия Пользователя.
+        </p>
+        <p class="popup-text">
+          7.3. Пользователь несет ответственность за правомерность, корректность
+          и правдивость предоставленной Персональных данных в соответствии с
+          действующим законодательством.
+        </p>
+        <p class="popup-header">8. РАЗРЕШЕНИЕ СПОРОВ</p>
+        <p class="popup-text">
+          8.1. До обращения в суд с иском по спорам, возникающим из отношений
+          между Пользователем сайта и Администрацией сайта, обязательным
+          является предъявление претензии (письменного предложения о
+          добровольном урегулировании спора).
+        </p>
+        <p class="popup-text">
+          8.2. Получатель претензии в течение 30 календарных дней со дня
+          получения претензии, письменно уведомляет заявителя претензии о
+          результатах рассмотрения претензии.
+        </p>
+        <p class="popup-text">
+          8.3. При не достижении соглашения спор будет передан на рассмотрение в
+          судебный орган в соответствии с действующим законодательством.
+        </p>
+        <p class="popup-text">
+          8.4. К настоящей Политике конфиденциальности и отношениям между
+          Пользователем и Администрацией сайта применяется действующее
+          законодательство.
+        </p>
+        <p class="popup-header">9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</p>
+        <p class="popup-text">
+          9.1. Администрация сайта вправе вносить изменения в настоящую Политику
+          конфиденциальности без согласия Пользователя.
+        </p>
+        <p class="popup-text">
+          9.2. Новая Политика конфиденциальности вступает в силу с момента ее
+          размещения на Сайте, если иное не предусмотрено новой редакцией
+          Политики конфиденциальности.
+        </p>
+      </div>
+    </div>
+
+    <script src="assets/plugins/Magnific-Popup-master/libs/jquery/jquery.js"></script>
+    <script src="assets/plugins/intl-tel-input-master/build/js/intlTelInput-jquery.js"></script>
+    <script src="assets/plugins/intl-tel-input-master/build/js/intlTelInput.js"></script>
+    <script src="assets/plugins/jQuery-Mask-Plugin-master/dist/jquery.mask.js"></script>
+    <script src="assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
 
     <script src="assets/js/main.js"></script>
   </body>

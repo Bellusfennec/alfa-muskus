@@ -9,6 +9,7 @@
 .container {
   width: 1170px;
   margin: auto;
+  position: relative;
   h2 {
     text-align: center;
     font-size: 50px;
@@ -90,7 +91,7 @@
     display: flex;
     justify-content: center;
     margin-top: 3px;
-    div {
+    a {
       width: 30px;
       height: 30px;
       margin-right: 5px;
@@ -130,11 +131,17 @@
       text-align: right;
     }
   }
-  & > p {
+  .header__telephone {
     font-size: 19px;
     font-family: "FuturaPT-Bold";
     margin-top: 3px;
     text-align: right;
+    transition: 0.3s;
+    color: inherit;
+    &:hover {
+      color: #48a43f;
+      text-decoration: none;
+    }
   }
   a {
     color: #48a43f;
@@ -142,6 +149,9 @@
     margin-left: 10px;
     display: block;
     letter-spacing: 0rem;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 .background-main {
@@ -151,15 +161,17 @@
   object-fit: cover;
   width: 100%;
 }
-.background-main-paper {
-  position: absolute;
-}
-.background-main-paper:nth-child(2) {
-  position: absolute;
-  left: 30px;
-}
+
+
+
 .main {
+  position: relative;
   margin-top: 50px;
+  .main-background-paper {
+    position: absolute;
+    top: 358px;
+    left: 200px;
+  }
   h1 {
     font-family: "FuturaPT-Light";
     text-align: center;
@@ -171,21 +183,17 @@
       letter-spacing: 0.22rem;
     }
   }
-  div {
-    div {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-      .main__circles {
-        width: 100px;
-      }
-      p {
-        text-align: center;
-        font-size: 23px;
-        width: 650px;
-        span {
-          font-family: "FuturaPT-Bold";
-        }
+  .main__subtitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    p {
+      text-align: center;
+      font-size: 23px;
+      width: 650px;
+      margin: 0 30px;
+      span {
+        font-family: "FuturaPT-Bold";
       }
     }
   }
@@ -229,13 +237,12 @@
   width: 330px;
   margin-top: 87px;
   margin-right: 70px;
-  input {
-    width: 100%;
+  .discount__tel {
+    width: 330px;
     padding: 30px 40px;
     font-size: 17px;
     border-radius: 10px;
     border: none;
-    color: #d9d8d8;
     background: #f7f6f6;
     letter-spacing: 0.05rem;
     font-family: "FuturaPT-Book";
@@ -244,6 +251,7 @@
       outline: #11b6d1 1px solid;
     }
   }
+
   button {
     margin-top: 18px;
     width: 100%;
@@ -258,7 +266,7 @@
     background: linear-gradient(#11b6d1, #358fba);
   }
   div {
-    margin-top: 15px;
+    // margin-top: 15px;
     input {
       display: inline-block;
       width: 50px;
@@ -283,7 +291,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -140px;
+  bottom: -150px;
   background: linear-gradient(#61d856, #5cb653);
   padding: 10px 27px;
   border-radius: 0 0 25px 25px;
@@ -299,8 +307,9 @@
   }
 }
 .video {
-  margin-top: 170px;
+  margin-top: 150px;
   position: relative;
+  padding-top: 30px;
   .video__youtube {
     margin-top: 44px;
     position: relative;
@@ -310,6 +319,12 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      padding: 40px;
+      div {
+        display: flex;
+        justify-content: end;
+        width: 30px;
+      }
     }
   }
   .video__hand {
@@ -319,10 +334,13 @@
   }
 }
 .no-problem {
-  margin-top: 57px;
+  margin-top: 27px;
   position: relative;
   height: 900px;
+  padding-top: 30px;
   .no-problem__group {
+    position: relative;
+    top: -5px;
     display: flex;
     justify-content: space-around;
     .no-problem__items {
@@ -375,13 +393,16 @@
   }
   img {
     position: absolute;
-    top: -35px;
+    top: -10px;
     z-index: -1;
   }
 }
 .benefits {
   position: relative;
-  margin-top: 30px;
+  margin-top: 25px;
+  h2 {
+    padding-top: 30px;
+  }
   .benefits__items {
     margin-top: 62px;
     display: flex;
@@ -532,7 +553,8 @@
 }
 .improvement {
   position: relative;
-  margin-top: 53px;
+  margin-top: 23px;
+  padding-top: 30px;
   .improvement__group {
     margin-top: 35px;
     position: relative;
@@ -591,8 +613,9 @@
   }
 }
 .preparation {
-  margin-top: 184px;
+  margin-top: 154px;
   position: relative;
+  padding-top: 30px;
   h2 {
     letter-spacing: 0.01rem;
     font-size: 49px;
@@ -823,7 +846,8 @@
   }
 }
 .heals {
-  margin-top: 95px;
+  margin-top: 65px;
+  padding-top: 30px;
   .heals__wrapper {
     margin-top: 53px;
     display: flex;
@@ -868,13 +892,10 @@
         .heals__reviews-doctors-title {
           display: flex;
           justify-content: space-between;
-          & > div {
-            display: flex;
-            align-items: center;
-            div {
-              font-size: 18px;
-              margin: 0 10px;
-            }
+          align-items: center;
+          p {
+            font-size: 18px;
+            margin-right: 20px;
           }
         }
         .heals__doctor-wrapper {
@@ -929,18 +950,51 @@
       }
     }
   }
+  &__owl {
+    .owl-item img {
+      display: inline-block;
+      width: auto;
+    }
+  }
+  .owl-nav {
+    button {
+      span {
+        position: absolute;
+        top: -50px;
+        border-radius: 50%;
+        padding: 0px 15px 0px 15px;
+        font-size: 55px;
+        line-height: 1.1;
+        font-family: "FuturaPT-Light";
+        &:hover {
+          color: #338db8;
+        }
+      }
+    }
+    .owl-prev {
+      span {
+        right: 50px;
+      }
+    }
+    .owl-next {
+      span {
+        right: -15px;
+      }
+    }
+  }
 }
 .reviews {
   position: relative;
-  margin-top: 98px;
-  .reviews__background-leaf {
+  margin-top: 47px;
+  padding-top: 30px;
+  &__background-leaf {
     position: absolute;
     width: 400px;
     top: -400px;
     left: 0;
     z-index: -1;
   }
-  .reviews__buttons {
+  &__buttons {
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -965,105 +1019,136 @@
       }
     }
   }
-  .reviews__group {
-    margin-top: 55px;
+  &__item {
+    width: 360px;
+    border-radius: 35px;
+    padding: 40px 55px 55px 55px;
+    background: #f4f5f6;
+  }
+  &__user {
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    .reviews__arrow {
-      background: white;
-      border: #eae8e8 1px solid;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50);
-      border-radius: 50%;
-      padding: 23px 32px;
-      &:hover {
-        background: linear-gradient(#11b6d1, #338db8);
+    & > div {
+      margin-left: 33px;
+      margin-top: 3px;
+      h5 {
+        font-size: 30px;
+        letter-spacing: 0.08rem;
       }
-      &.reviews__arrow-left {
-        left: -40px;
-      }
-      &.reviews__arrow-right {
-        right: -40px;
-      }
-    }
-    .reviews__item {
-      width: 360px;
-      border-radius: 35px;
-      padding: 40px 55px 55px 55px;
-      background: #f4f5f6;
-      .reviews__user {
-        display: flex;
-        & > div {
-          margin-left: 33px;
-          margin-top: 3px;
-          h5 {
-            font-size: 30px;
-            letter-spacing: 0.08rem;
-          }
-          div {
-            margin-top: 7px;
-            display: inline-block;
-            padding: 8px 20px;
-            color: #48a43f;
-            background: white;
-            border-radius: 30px;
-          }
-        }
-      }
-      .reviews__problem {
-        margin-top: 17px;
-        h6 {
-          margin-top: 5px;
-          font-size: 20px;
-          letter-spacing: 0.05rem;
-        }
-        .reviews__text {
-          margin-top: 21px;
-          font-size: 16px;
-          font-family: "FuturaPT-Book";
-          line-height: 1.2;
-        }
-        .reviews__grade {
-          margin-top: 24px;
-        }
+      div {
+        margin-top: 7px;
+        display: inline-block;
+        padding: 8px 20px;
+        color: #48a43f;
+        background: white;
+        border-radius: 30px;
       }
     }
   }
-  .reviews__selects {
+  &__problem {
+    margin-top: 17px;
+    h6 {
+      margin-top: 5px;
+      font-size: 20px;
+      letter-spacing: 0.05rem;
+    }
+    .reviews__text {
+      margin-top: 21px;
+      font-size: 16px;
+      font-family: "FuturaPT-Book";
+      line-height: 1.2;
+    }
+    .reviews__grade {
+      margin-top: 24px;
+    }
+  }
+  &__owl {
+    margin-top: 54px;
+  }
+  & .owl-item img {
+    display: inline-block;
+    width: auto;
+  }
+  .owl-nav {
+    button {
+      span {
+        background: white;
+        border: #eae8e8 1px solid;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        // width: 60px;
+        // height: 60px;
+        padding: 0px 30px 10px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 55px;
+        line-height: 1.1;
+        font-family: "FuturaPT-Light";
+        &:hover {
+          color: white;
+          background: linear-gradient(#11b6d1, #338db8);
+        }
+      }
+    }
+    .owl-prev {
+      span {
+        left: -40px;
+      }
+    }
+    .owl-next {
+      span {
+        right: -10px;
+      }
+    }
+  }
+  .owl-dots {
     display: flex;
     justify-content: center;
-    margin-top: 58px;
-    .reviews__select {
+    margin-top: 35px;
+    .owl-dot {
       margin-left: 22px;
       border-radius: 50%;
       height: 10px;
       width: 10px;
       background: #f0f0f0;
-      &.reviews__select-active {
-        background: #338db8;
+      &:first-child {
+        margin-left: 0;
       }
       &:hover {
         background: #338db8;
       }
-      &:first-child {
-        margin-left: 0;
+      &.active {
+        background: #338db8;
       }
     }
   }
 }
 .quiz {
   margin-top: 72px;
-  margin-bottom: 818px;
+  margin-bottom: 790px;
+  position: relative;
+  &__background {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+  }
+  &__book {
+    position: absolute;
+    z-index: -1;
+    top: -100px;
+    right: 0;
+
+  }
 }
 .answer {
-  margin-top: 0px;
   position: relative;
-  height: 1050px;
+  height: 970px;
+  padding-top: 30px;
   .answer__background {
     position: absolute;
-    top: -420px;
+    top: -387px;
     z-index: -1;
   }
   .answer__groups {
@@ -1133,12 +1218,19 @@
       }
     }
   }
-  .answer__footer {
-    position: absolute;
-    bottom: 0;
+}
+
+.answer-footer {
+  position: relative;
+  top: -76px;
+  
+  &__wrapper {
     border: #ededed 1px solid;
     border-radius: 20px;
-   
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     &::after {
       content: "";
       position: absolute;
@@ -1153,50 +1245,59 @@
       box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
       z-index: -1;
     }
-    &>div {
-      height: 190px;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      .answer__footer-text {
-        width: 200px;
-        color: #48a43f;
-        font-size: 30px;
-        text-transform: uppercase;
-        font-family: "FuturaPT-Demi";
-      }
-      .answer__footer-doctor {
-        width: 325px;
-        margin-top: -15px;
-        div:nth-child(1) {
-          font-size: 25px;
-          // width: 270px;
-          line-height: 1.2;
-          font-family: "FuturaPT-Book";
-        }
-        div:nth-child(2) {
-          font-family: "FuturaPT-Demi";
-          font-size: 45px;
-          line-height: 1.2;
-        }
-      }
-      .answer__footer-button a {
-        display: inline-block;
-        padding: 35px 60px;
-        color: white;
-        border-radius: 10px;
-        border: none;
-        font-size: 17px;
-        letter-spacing: 0.03rem;
-        font-family: "FuturaPT-Bold";
-        text-transform: uppercase;
-        background: linear-gradient(#11b6d1, #338db8);
-      }
+  }
+  & > div {
+    // height: 190px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-evenly;
+  }
+  &__text {
+    width: 200px;
+    color: #48a43f;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "FuturaPT-Demi";
+  }
+  &__doctor {
+    width: 325px;
+    margin-top: -15px;
+    div:nth-child(1) {
+      font-size: 25px;
+      // width: 270px;
+      line-height: 1.2;
+      font-family: "FuturaPT-Book";
+    }
+    div:nth-child(2) {
+      font-family: "FuturaPT-Demi";
+      font-size: 45px;
+      line-height: 1.2;
     }
   }
+  &__button a {
+    display: inline-block;
+    padding: 35px 60px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    letter-spacing: 0.03rem;
+    font-family: "FuturaPT-Bold";
+    text-transform: uppercase;
+    background: linear-gradient(#11b6d1, #338db8);
+  }
 }
+
 .order {
-  margin-top: 77px;
+  margin-top: -30px;
+  position: relative;
+  padding-top: 30px;
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
   .order__group {
     display: flex;
     justify-content: space-between;
@@ -1205,8 +1306,8 @@
       position: relative;
       .order__fill {
         top: -40px;
-          position: absolute;
-        &>div {
+        position: absolute;
+        & > div {
           padding: 0 55px;
           width: 370px;
           display: flex;
@@ -1298,39 +1399,128 @@
     p {
       margin-top: 12px;
     }
-    
   }
   &__group {
     display: flex;
-    &__messanger {
-      &:nth-child(1) {
+    margin-top: 22px;
+  }
+  &__radios {
+    & > div:nth-child(1) {
+      label.products__messanger > div {
+        background: #25d266;
+      }
+    }
+    & > div:nth-child(2) {
+      label.products__messanger > div {
         background: #7460f3;
       }
-      &:nth-child(2) {
+    }
+    & > div:nth-child(3) {
+      label.products__messanger > div {
         background: #00a2f2;
       }
-      &:nth-child(3) {
-        background: #48a43f;
+    }
+    label.products__messanger {
+      height: 100px;
+      width: 90px;
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 5px;
+      border-radius: 15px;
+      background: none;
+      div {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        border-radius: 50%;
+        img {
+          width: 18px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      p {
+        font-family: "FuturaPT-Book";
+        margin-top: 5px;
+        font-size: 15px;
+        color: #282728;
+      }
+      &:hover {
+        border: 1px #00000000;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(199, 199, 199, 0.2);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(199, 199, 199, 0.2);
+        box-shadow: 0px 0px 10px 0px rgba(199, 199, 199, 0.2);
+      }
+    }
+    input[type="radio"] {
+      &:checked + label {
+        border: 1px #00000000;
+        color: #282728;
+        background: white;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(199, 199, 199, 0.2);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(199, 199, 199, 0.2);
+        box-shadow: 0px 0px 10px 0px rgba(199, 199, 199, 0.2);
+        p {
+          color: #282728;
+        }
       }
     }
   }
-  &__messanger {
-    display: flex;
-    div {
-      width: 50px;
-      height: 50px;
-      margin-right: 5px;
-      position: relative;
-      border-radius: 50%;
-      &:last-child {
-        margin-right: 0;
+
+  &__input {
+    margin-left: 10px;
+    input {
+      padding: 30px 40px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
+      background: #fff;
+      letter-spacing: 0.05rem;
+      font-family: "FuturaPT-Book";
+      &:hover,
+      &:focus {
+        outline: #11b6d1 1px solid;
       }
-      
-      img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    }
+  }
+  &__button {
+    margin-left: 20px;
+    button {
+      color: white;
+      text-transform: uppercase;
+      padding: 32px 60px;
+      border-radius: 10px;
+      border: none;
+      font-size: 18px;
+      letter-spacing: 0.09rem;
+      font-family: "FuturaPT-Demi";
+      background: linear-gradient(#11b6d1, #358fba);
+    }
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    input {
+      display: inline-block;
+    }
+    p {
+      margin: 0;
+      margin-left: 20px;
+      font-size: 13px;
+      width: 370px;
+      display: inline-block;
+      a {
+        font-family: "FuturaPT-Bold";
+        text-decoration: underline;
+        color: #48a43f;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }
@@ -1343,6 +1533,652 @@
   }
 }
 
+.about {
+  margin-top: 90px;
+  padding-top: 30px;
+  position: relative;
+  &__pin {
+    position: absolute;
+    top: -400px;
+    right: 0;
+    z-index: -1;
+  }
+  // .about__group
+  &__group {
+    justify-content: space-between;
+    margin-top: 17px;
+    display: flex;
+  }
+  // .about__contacts
+  &__contacts {
+    width: 225px;
+    h3 {
+      margin-top: 24px;
+      font-size: 28px;
+      letter-spacing: 0.17rem;
+    }
+  }
+  // .about__telephone
+  &__telephone {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    & > div:nth-child(2) {
+      margin-left: 10px;
+      line-height: 1.2;
+    }
+  }
+  // .about__adress
+  &__adress {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    p {
+      margin-left: 10px;
+      line-height: 1.5;
+      letter-spacing: 0.09rem;
+    }
+  }
+  &__time {
+    margin-top: 5px;
+    font-size: 19px;
+    span {
+      font-size: 14px;
+      letter-spacing: 0.04rem;
+    }
+  }
+  &__email {
+    margin-top: 5px;
+    font-size: 19px;
+  }
+  &__write {
+    display: flex;
+  }
+  // .about__messengers
+  &__messangers {
+    margin-left: 5px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    div {
+      margin-right: 5px;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      border-radius: 50%;
+      img {
+        width: 12px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:nth-child(2) {
+        background: #7460f3;
+      }
+      &:nth-child(3) {
+        background: #00a2f2;
+      }
+      &:nth-child(1) {
+        background: #25d266;
+      }
+    }
+  }
+  // .about__menu
+  &__menu {
+    width: 250px;
+    h3 {
+      margin-top: 24px;
+      font-size: 28px;
+      letter-spacing: 0.095rem;
+    }
+    a {
+      display: block;
+      margin-top: 20px;
+      &.about__link_blue {
+        color: #2b8cb7;
+        text-decoration: underline;
+        &hover {
+          text-align: none;
+        }
+      }
+    }
+  }
 
+  // .about__benefits
 
+  &__benefits {
+    width: 420px;
+    h3 {
+      margin-top: 24px;
+      font-size: 28px;
+      letter-spacing: 0.17rem;
+    }
+  }
 
+  // .about__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    div:nth-child(1) {
+      position: relative;
+      background: #2fa55c;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    div:nth-child(2) {
+      margin-left: 25px;
+      margin-right: 10px;
+      h4 {
+        font-size: 19px;
+        margin-bottom: 5px;
+        letter-spacing: 0.085rem;
+        line-height: 1.05;
+      }
+      p {
+        margin-top: 18px;
+        letter-spacing: 0.03rem;
+        font-size: 16px;
+        font-family: "FuturaPT-Book";
+      }
+    }
+  }
+}
+
+.map {
+  margin-top: 35px;
+  // .map__wrapper
+  &__wrapper {
+    position: relative;
+  }
+  // .map__adress
+  &__adress {
+    position: absolute;
+    top: 51px;
+    left: 103px;
+    h3 {
+      font-size: 28px;
+      letter-spacing: 0.13rem;
+    }
+  }
+  &__group {
+    margin-top: 25px;
+    display: flex;
+    img {
+      margin-right: 15px;
+    }
+  }
+}
+
+.footer {
+  margin-top: 55px;
+  background: #49a340;
+  color: white;
+  // .footer_wrapper
+  &_wrapper {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  // .footer__name
+  &__name {
+  }
+  // .footer__copyright
+  &__copyright {
+    text-align: center;
+  }
+  // .footer__paradigma
+  &__paradigma {
+  }
+  a {
+    color: white;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#Order-consultation {
+  position: relative;
+  width: auto;
+  max-width: 1170px;
+  margin: 20px auto;
+  border-radius: 50px;
+}
+.order-consultation {
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    padding: 45px 100px;
+  }
+  h2 {
+    font-family: "FuturaPT-Book";
+    font-size: 45px;
+    span {
+      font-family: "FuturaPT-Bold";
+    }
+  }
+  // .order-consultation__group
+  &__group {
+    margin-top: 30px;
+    display: flex;
+    width: 480px;
+    justify-content: space-between;
+  }
+  // .order-consultation__item
+  &__item {
+    display: flex;
+    align-items: center;
+    div {
+      position: relative;
+      height: 18px;
+      width: 18px;
+      background: #2fa55c;
+      border-radius: 50%;
+      img {
+        width: 8px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    p {
+      width: 100px;
+      margin-left: 10px;
+    }
+  }
+  &__form {
+  }
+  &__input {
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    input {
+      padding: 30px 40px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
+      color: #9e9e9e;
+      background: #fff;
+      letter-spacing: 0.05rem;
+      font-family: "FuturaPT-Book";
+      &:hover,
+      &:focus {
+        outline: #11b6d1 1px solid;
+      }
+      &focus {
+        color: #000000;
+      }
+    }
+    button {
+      margin-left: 20px;
+      color: white;
+      text-transform: uppercase;
+      width: 290px;
+      padding: 21px 20px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      letter-spacing: 0.09rem;
+      font-family: "FuturaPT-Demi";
+      background: linear-gradient(#11b6d1, #358fba);
+    }
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    input {
+      display: inline-block;
+    }
+    p {
+      margin: 0;
+      margin-left: 20px;
+      font-size: 13px;
+      width: 370px;
+      display: inline-block;
+      a {
+        font-family: "FuturaPT-Bold";
+        text-decoration: underline;
+        color: #48a43f;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+#Lobanov-video {
+  position: relative;
+  width: auto;
+  max-width: 1170px;
+  margin: 20px auto;
+}
+
+#Reviews-video {
+  position: relative;
+  width: auto;
+  max-width: 1170px;
+  margin: 20px auto;
+  background: #fff;
+}
+.reviews-video {
+
+}
+
+#Order-preparation {
+  position: relative;
+  width: auto;
+  max-width: 909px;
+  margin: 20px auto;
+}
+.order-preparation {
+  height: 500px;
+  &__background {
+    position: absolute;
+  }
+  &__group {
+    position: absolute;
+    display: flex;
+  }
+  &__benefits {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    align-items: center;
+  }
+  &__delivery,
+  &__card {
+    display: flex;
+    align-items: center;
+    p {
+      margin-left: 20px;
+      width: 120px;
+      span {
+        font-family: "FuturaPT-Bold";
+      }
+    }
+  }
+  &__form {
+    width: 570px;
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-family: "FuturaPT-Book";
+    }
+  }
+  &__description {
+    text-align: center;
+    font-size: 18px;
+    color: #aeaeaf;
+    margin-bottom: 5px;
+  }
+  &__radios {
+    margin-top: 5px;
+    gap: 10px;
+    display: flex;
+  }
+  &__count-adress {
+    display: flex;
+    margin-top: 5px;
+    gap: 10px;
+    div:nth-of-type(2) {
+      width: 370px;
+    }
+  }
+  &__telephone-button {
+    margin-top: 20px;
+  }
+  &__specialist-checkbox {
+    margin-top: 18px;
+  }
+  &__specialist {
+    font-family: "FuturaPT-Demi";
+    font-size: 17px;
+    text-align: center;
+  }
+  &__checkbox {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    div:nth-of-type(2) {
+      font-size: 13px;
+      width: 350px;
+      a {
+        color: #69a462;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+#open-popup {
+  padding: 20px;
+}
+.white-popup {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+  width: auto;
+  max-width: 200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#More-tincture,
+#More-capsules,
+#More-rectal-candles {
+  position: relative;
+  background: #f4f5f6;
+  width: auto;
+  max-width: 1030px;
+  margin: 20px auto;
+  border-radius: 50px;
+  overflow-y: hidden;
+  height: 90vh;
+}
+.more-tincture {
+  height: 100%;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &__product {
+    display: flex;
+    justify-content: center;
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      width: 890px;
+      margin-top: 70px;
+    }
+  }
+  &__image {
+    width: 431px;
+    height: 590px;
+    background: #fff;
+    border-radius: 45px;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .more-tincture__link {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__availability {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+  }
+  &__availability-icon {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: #4aa541;
+    border-radius: 50%;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 7px;
+    }
+  }
+  &__availability-text {
+    margin-left: 5px;
+    color: #4aa541;
+  }
+  &__description {
+    width: 370px;
+    h3 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 18px;
+      span {
+        font-family: "FuturaPT-Bold";
+      }
+    }
+  }
+  .more-tincture__price {
+    margin-top: 25px;
+    display: flex;
+    div {
+      display: flex;
+      p {
+        &:nth-child(1) {
+          color: #48a43f;
+          font-family: "FuturaPT-Bold";
+          font-size: 18px;
+          span {
+            font-size: 47px;
+            margin-right: 5px;
+          }
+        }
+        &:nth-child(2) {
+          margin-left: 28px;
+          color: #d6d6d6;
+          font-size: 18px;
+          font-family: "FuturaPT-Book";
+          span {
+            text-decoration: line-through;
+            font-size: 47px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  &__benedits {
+    display: flex;
+    justify-content: center;
+    .order-consultation__group {
+      justify-content: space-between;
+      width: 852px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .order-consultation__item {
+      div {
+        height: 35px;
+        width: 35px;
+        img {
+          width: 12px;
+        }
+      }
+      p {
+        font-size: 20px;
+        font-family: "FuturaPT-Bold";
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      &:nth-of-type(1) {
+        p {
+          width: 190px;
+        }
+      }
+      &:nth-of-type(2) {
+        p {
+          width: 140px;
+        }
+      }
+      &:nth-of-type(3) {
+        p {
+          width: 220px;
+        }
+      }
+    }
+  }
+  &__order {
+    display: flex;
+    justify-content: center;
+    .order-preparation__group {
+      position: relative;
+      background: #fff;
+      border-radius: 50px;
+      margin-bottom: 70px;
+      .order-preparation__benefits {
+        height: 400px;
+      }
+    }
+  }
+}
+
+#Privacy-policy {
+  position: relative;
+  background: #fff;
+  width: auto;
+  max-width: 1170px;
+  margin: 20px auto;
+  border-radius: 50px;
+  padding: 0 25px;
+  overflow-y: hidden;
+  height: 90vh;
+}
+.privacy-policy {
+  overflow: auto;
+  height: 100%;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .popup-header {
+    margin: 20px 0;
+    font-size: 30px;
+  }
+  .popup-text {
+    margin-bottom: 10px;
+  }
+}
